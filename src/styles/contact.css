@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: arial;
+}
+
+.main-content {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+.middle-block {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.middle-block .content-left {
+    width: 550px;
+    padding: 50px;
+    border-radius: 16px 0 0 16px;
+    background:#081732;
+    color: #FFF;
+}
+.middle-block .content-left .little-title {
+    font-size: 45px;
+    font-weight: 900;
+    margin-top: 210px;
+    justify-content: center;
+    text-align: center;
+}
+.middle-block .content-left img {
+    margin-top: -50px;
+}
+.middle-block form {
+    width: auto;
+}
+.middle-block form {
+    background-color: #f0f0f0;
+    padding: 50px 25px 50px 25px;
+    border-radius: 0 16px 16px 0;
+}
+.middle-block form label {
+    display: block;
+}
+.middle-block form input {
+    width: 75%;
+    height: 42.8px; 
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    padding-left: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+.middle-block .flex-input {
+    display: flex;
+}
+.middle-block .flex-input .second-part-flex-input {
+    margin-top: 4px;
+    margin-left: 15px;
+}
+.middle-block form .text {
+    font-size: 12px;
+    margin-top: -15px;
+}
+.middle-block form label {
+    font-weight: bolder;
+}
+.middle-block form .button {
+    margin-left: 190px;
+}
+.middle-block form button {
+    width: 225.03px;
+    height: 60.39px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFF;
+    background-color: #0A68F1;
+    text-align: center;
+    border: 0;
+    border-radius: 40px;
+}
+.bottom-middle-block {
+    text-align: center;
+    margin-top: -100px;
+}
+.main-bottom {
+    display: flex;
+    background: #ececec;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    border-radius: 33px;
+}
+.main-bottom .text {
+    padding-top: 75px;
+}
+.main-bottom h2 {
+    font-size: 30px;
+    font-weight: 900;
+}
+.main-bottom .text .section-part .color {
+    color: rgb(0, 112, 150);
+    font-weight: bolder;
+}
+.main-bottom .text .second-part p {
+    font-size: 16px;
+}
+.footer {
+    height: 600px;
+    background: #000234;   
+    box-shadow: 0 0 25px #000;
+    color: #FFF;
+}
+.content-flex {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.content-flex .content-left {
+    padding-left: 50px;
+    margin-top: -10px;
+}
+.content-flex .content-left h2 {
+    margin-top: 0;
+}
+.content-flex .content-right span{
+    font-weight: 900;
+}
+.content-flex .content-right .text {
+    font-size: 11px;
+    color: #988FA3;
+    font-weight: 100;
+}
+.content-flex .content-left h2 { 
+    font-size: 30px;
+    font-weight: 900;
+}
+.content-flex .content-left button {
+    width: 239.8px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 100;
+    color: #FFF;
+    background: #594FF4;
+    border-radius: 100px;
+    border: 0;
+    cursor: pointer;
+}
+.content-bottom {
+    text-align: center;
+    padding-top: 100px;
+    left: 0;
+    right: 0;
+}
+.content-bottom a {
+    margin-left: 40px;
+    font-size: 13px;
+    font-weight: 100;
+    color: #EFEEF2;
+    text-decoration: none;
+}
+
+.main-content .middle-block .content-left .link {
+    color: #FFF;
+    
+} 

@@ -1,0 +1,156 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+}
+
+.main .content{
+    display: flex;
+    width: 1140px;
+    margin: 0 auto;
+    border-radius: 16px;
+    margin-bottom: 50px;
+}
+.main .left-content {
+    width: 550px;
+    background-color: #00375e;
+    border: 1px solid #FFF;
+    color: #FFF;
+    padding: 10px 50px;
+    border-radius: 16px 0 0 16px;
+}
+.main .content .left-content .link {
+    color: #FFF;
+    font-size: 1em;
+    text-decoration: underline;
+}
+.main .content .left-content .text {
+    padding-top: 70px;
+}
+.main .content .left-content .text p:nth-child(2) {
+    font-size: 20px;
+}
+.main .formulaire {
+    width: 570px;
+    height: auto;
+    padding: 50px;
+    border-radius: 0 16px 16px 0;
+    background-color: rgb(219, 224, 228);
+    color: #FFF;
+}
+.main .formulaire form .name {
+    display: flex;
+}
+.main .formulaire form .first-input {
+    margin-right: 12.5px;
+}
+.main .formulaire form input {
+    outline: none;
+}
+.main .formulaire form input {
+    width: 243px;
+    height: 40px;
+    border: 0;
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 13px;
+}
+.main .formulaire form .email input {
+    width: 495px;
+}
+.main .formulaire form .tel input {
+    width: 495px;
+}
+.main .formulaire form .poste select {
+    width: 495px;
+    outline: none;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 13px;
+    border: 0;
+}
+.main .formulaire form .message textarea {
+    max-width: 495px;
+    min-width: 495px;
+    max-height: 125px;
+    min-height: 125px;
+    outline: none;
+    border: 0;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 13px;
+}
+.button-submit {
+    text-align: center;
+    padding-top: 25Px;
+}
+.button-submit button {
+    width: 85px;
+    text-align: center;
+    height: 40px;
+    font-weight: bolder;
+    color: #FFF;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #00375e;
+    font-size: 13px;
+}
+.footer {
+    height: 600px;
+    background: #000234;   
+    color: #FFF;
+    box-shadow: 0 0 25px #000;
+}
+.content-flex {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.content-flex .content-left {
+    padding-left: 50px;
+    margin-top: -10px;
+}
+.content-flex .content-left h2 {
+    margin-top: 0;
+}
+.content-flex .content-right span{
+    font-weight: 900;
+}
+.content-flex .content-right .text {
+    font-size: 11px;
+    color: #988FA3;
+    font-weight: 100;
+}
+.content-flex .content-left h2 { 
+    font-size: 30px;
+    font-weight: 900;
+}
+.content-flex .content-left button {
+    width: 239.8px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 100;
+    color: #FFF;
+    background: #594FF4;
+    border-radius: 100px;
+    border: 0;
+    cursor: pointer;
+}
+.content-bottom {
+    text-align: center;
+    margin-top: 50px;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+}
+.content-bottom a {
+    margin-left: 40px;
+    font-size: 13px;
+    font-weight: 100;
+    color: #EFEEF2;
+    text-decoration: none;
+}
+/* body {
+    background: linear-gradient(to top , #081732 73.2%, rgb(237, 245, 255) 25%);
+} */
