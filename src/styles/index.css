@@ -72,6 +72,8 @@ html, body {
     font-size: 14px;
     background: #FFF;
     color: #000;
+    position: sticky;
+    top:0; 
     cursor: pointer; 
 }
 .header .navbar a:nth-child(5) {
