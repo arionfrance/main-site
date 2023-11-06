@@ -176,7 +176,7 @@
     /* flex-direction: column; */
     /* row-gap: 50px; */
   }
-  .domaine-expertise .content > div {
+  .domaine-expertise .index-slider > div {
     width: 300px !important;
     max-width: 100%;
     margin: 0 auto !important;
@@ -336,7 +336,7 @@
   overflow-x: scroll;
 }
 
-  .content {
+.index-slider{
     display: flex;
     flex-direction: row;
     -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
