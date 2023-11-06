@@ -1,6 +1,9 @@
 .header{
     box-shadow: 0 0 10px #6e6e6e;
     background-color: #FFF;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .header .navbar a {
