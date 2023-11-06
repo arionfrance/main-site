@@ -31,14 +31,6 @@ html, body {
 .button-links {
     margin-top: -12px;
 }
-
-.index-slider{
-    display: flex;
-    justify-content: space-between;
-    padding: 0% 5% 0 5%;
-}
-
-
 .header .navbar .links :nth-child(2) {
     padding-left: 50px;
 }
@@ -53,7 +45,10 @@ html, body {
 .navbar img {
     margin-top: -60px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7b23e32774ffc39118c7a5539eaf5baecadfa0b6
 .header .navbar .button-links {
     margin-right: 50px;
     margin-top: 1px;
@@ -177,7 +172,11 @@ html, body {
     margin: 0 auto;
     justify-items: center;
 }
+<<<<<<< HEAD
 .domaine-expertise .content .social-media, .ads, .web-site ,.bulle{
+=======
+.domaine-expertise .content .social-media, .ads, .web-site {
+>>>>>>> 7b23e32774ffc39118c7a5539eaf5baecadfa0b6
     width: 500px;
     height: 400px;
     background: #081732;
