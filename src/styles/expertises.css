@@ -16,8 +16,6 @@ html, body {
     background-color: #FFF;
     margin: 0 auto;
     margin-bottom: 100px;
-    position: sticky;
-    top:0; 
 }
 .header .navbar {
     font-size: 15px;
