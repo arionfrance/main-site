@@ -18,6 +18,10 @@
 }  
 
 
+.google,.ads ,.discover{
+  width: 25%!important;
+}
+
 .title_index{
   text-align: center;
   background-color: #070E27 ;
