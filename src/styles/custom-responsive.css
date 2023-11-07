@@ -7,6 +7,16 @@
   width: auto;
 }
 
+.flexbox_expertise{
+  display: flex;
+  justify-content: space-around;
+}
+
+.marketing, .design-ux, .copywriting{
+  width: 25%; 
+  text-align: center;
+}  
+
 
 .title_index{
   text-align: center;
@@ -176,10 +186,24 @@
     /* flex-direction: column; */
     /* row-gap: 50px; */
   }
+
+  .flexbox_expertise_container{
+    overflow-x: scroll;
+  }
+
   .domaine-expertise .index-slider > div {
     width: 300px !important;
     max-width: 100%;
     margin: 0 auto !important;
+  }
+
+  .flexbox_expertise{
+    display: flex;
+    flex-direction: row;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    scroll-snap-type: x mandatory;
+    width: 300% !important;
+    row-gap: 50px;
   }
   .main-content-middle .main-middle-part-to-bottom {
     flex-direction: column;
