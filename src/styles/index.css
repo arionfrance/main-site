@@ -8,6 +8,10 @@ html, body {
     position: relative;
 }
 
+#email{
+    margin-bottom: 2%;
+}
+
 .header {
     position: static;
     box-shadow: 0 0 10px #6e6e6e;
@@ -183,6 +187,12 @@ html, body {
     color: #FFF;
     text-decoration: none;
 }
+
+.social-media > h3 > a {
+    color: white;
+    text-decoration: none;
+}
+
 .domaine-expertise .content .ads {
     margin-left: 50px;
 }
@@ -424,6 +434,7 @@ html, body {
     position: absolute;
     bottom: 10px;
     right: 30px;
+    color: white; 
 }
 .domaine-expertise .content .bulle .link-1 {
     text-decoration: underline;
