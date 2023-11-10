@@ -8,6 +8,10 @@ html, body {
     position: relative;
 }
 
+#email{
+    margin-bottom: 2%;
+}
+
 .header {
     position: static;
     box-shadow: 0 0 10px #6e6e6e;
