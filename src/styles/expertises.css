@@ -109,7 +109,7 @@ html, body {
     padding: 50px 0 50px 0px;
 }
 .web-performance .content {
-    width: 80%;
+    width: 40%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -140,7 +140,7 @@ html, body {
     line-height: 27px;
 }
 .text{
-    text-align: justify;
+    text-align: left;
 }
 .main .google-ads {
     display: flex;
@@ -317,9 +317,7 @@ html, body {
     color: #33648d;
 }
 
-.methodo_img{
-    background-color:rbga(0,0,0,0);
-}
+
 
 /* Footer de la page index */
 /* Footer */
@@ -397,4 +395,11 @@ html, body {
     background: #00375e;
     border-radius: 100px;
     color: #FFF;
+}
+
+
+@media only screen and (min-width : 1224px){
+    .methodo_img{
+        background-color: #33648d;
+    }
 }
