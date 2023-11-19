@@ -16,6 +16,7 @@ html, body {
     margin: 0 auto;
     margin-bottom: 100px;
 }
+
 .header .navbar {
     font-size: 15px;
     padding-top: 35px;
@@ -46,6 +47,10 @@ html, body {
 .header .navbar .button-links {
     margin-right: 50px;
     margin-top: 1px;
+}
+
+.menu-toggle{
+    display: none;
 }
 .header .navbar .rdv {
     height: 50px;
@@ -297,6 +302,23 @@ html, body {
     color: #EFEEF2;
     text-decoration: none;
 }
+
+@media only screen and (max-width : 1224px){
+.hidden{
+    display: none;
+}
+
+.voirplus
+{
+    font-weight: 550;
+}
+
+#voirplus:checked + .voirplus + .hidden {
+    display: block;
+}
+
+}
+
 @media only screen and (min-width : 1224px){
 /* Add a class to the "View More" link for styling */
 .view-more {
@@ -316,6 +338,10 @@ html, body {
     top: 0;
     left: 0;
     margin-left: 10%;
+}
+
+.voirplus{
+    display: none;
 }
 
 /* Style the larger text */
