@@ -19,8 +19,14 @@
 
 
 .google,.ads ,.discover{
-  width: 25%!important;
+  width: 25% !important;
+  text-align: center;
 }
+
+.google p,.ads >p ,.discover >p {
+  text-align: justify;
+}
+
 
 .title_index{
   text-align: center;
