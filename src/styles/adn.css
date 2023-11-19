@@ -294,3 +294,76 @@ html, body {
     color: #EFEEF2;
     text-decoration: none;
 }
+@media only screen and (min-width : 1224px){
+/* Add a class to the "View More" link for styling */
+.view-more {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Initially hide the larger text */
+.view-more-content {
+    display: none;
+    position: fixed;
+    width: 80%;
+    height: 50%;
+    background-color: #081732;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    margin-left: 10%;
+}
+
+/* Style the larger text */
+.view-more-content {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 15%;
+}
+
+/* Style the link when it is clicked */
+.view-more {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+/* Style the link when it is hovered */
+.view-more:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Display the larger text when the link is clicked */
+.dev-crea .developer:hover .view-more-content,
+.dev-crea .design-graphism:hover .view-more-content,
+.dev-crea .web-dev:hover .view-more-content, 
+.ceo-coo .ceo:hover .view-more-content,
+.ceo-coo .coo:hover .view-more-content{
+    display: grid;
+    grid-template-columns:5% 40% 10% 1fr   5% ;
+    grid-template-rows: 5% 25% 1fr 10% 5% ;
+}
+
+.view-more-content > img{
+    grid-column: 2/3;
+    grid-row: 2/5;
+}
+
+.view-more-content > p{
+    grid-column: 4/5;
+    grid-row: 3/5;
+    text-align: left;
+}
+
+
+.teams_titles
+{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: left;
+    border-bottom:solid gray 1px ;
+    padding: 1px;
+}
+}
