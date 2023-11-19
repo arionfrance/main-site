@@ -57,6 +57,9 @@ html, body {
     color: #FFF;
     cursor: pointer;
 }
+.view-more-content {
+    display: none;
+}
 .header .navbar .contact {
     height: 50px;
     border: 1px solid #000;
