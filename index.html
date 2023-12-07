@@ -1,365 +1,447 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Arion réinventons l'acquisition client</title>
-        <meta name="description" content="site officiel de Arion Consulting">
-        <meta name="trustpilot-one-time-domain-verification-id" content="cb837856-f152-4c0e-b61c-e43709bd39fe"/>
-        <meta name="keywords" content="home">
-        <link rel="icon" href="src/img/logo-footer_arion.png">
-        <!-- CSS Link -->
-        <link rel="stylesheet" href="src/css/main.css">
-        <!-- Swipers Js -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arion réinventons l'acquisition client</title>
+    <meta name="description" content="site officiel de Arion Consulting" />
+    <meta name="trustpilot-one-time-domain-verification-id" content="cb837856-f152-4c0e-b61c-e43709bd39fe" />
+    <meta name="keywords" content="home" />
+    <link rel="icon" href="src/img/logo-footer_arion.png" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="src/css/main.css" />
+    <!-- Swipers Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Fontawesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+        <div class="sl_container">
+            <a href="/"><img src="./src/img/logo-header.png" alt="Arion Consulting" class="logo" /></a>
+            <div class="right_side">
+                <nav>
+                    <a href="/arion-adn.html">Arion Notre ADN</a>
+                    <a href="/expertises.html">Nos expertises</a>
+                    <a href="recrutement.html">Nous recrutons</a>
+                    <a href="contact.html">Nous contacter</a>
+                </nav>
+                <a class="btn" href="rdv.html">Obtenir un rendez-vous</a>
+            </div>
+            <div class="burger-menu" onclick="toggleBurger()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        id="top_path"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 4.91062C3 4.36821 3.44772 3.9285 4 3.9285L20 3.9285C20.5523 3.9285 21 4.36821 21 4.91062C21 5.45303 20.5523 5.89275 20 5.89275L4 5.89274C3.44772 5.89274 3 5.45303 3 4.91062Z"
+                        fill="black"
+                    />
+                    <path
+                        id="middle_path"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.5 12.7676L20 12.7676C20.5523 12.7676 21 12.3279 21 11.7855C21 11.2431 20.5523 10.8034 20 10.8034L4 10.8034C3.44772 10.8034 3 11.2431 3 11.7855C3 12.3279 3.44771 12.7676 4 12.7676L7.5 12.7676L8.7 14.339C8.88885 14.5863 9.18524 14.7319 9.5 14.7319C9.81476 14.7319 10.1111 14.5863 10.3 14.339L11.5 12.7676Z"
+                        fill="black"
+                    />
+                    <path
+                        id="bottom_path"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 18.6603C3 18.1179 3.44772 17.6782 4 17.6782L20 17.6782C20.5523 17.6782 21 18.1179 21 18.6603C21 19.2028 20.5523 19.6425 20 19.6425L4 19.6425C3.44772 19.6425 3 19.2028 3 18.6603Z"
+                        fill="black"
+                    />
+                </svg>
+            </div> 
+        </div>
+    </header>
+    <main class="home">
+        <section class="hero_section">
             <div class="sl_container">
-                <img src="./src/img/logo-header.png" alt="Arion Consulting" class="logo">
-                <div class="right_side">
-                    <nav>
-                        <a href="#">Arion Notre ADN</a>
-                        <a href="#">Nos expertises</a>
-                        <a href="#">Nous recrutons</a>
-                        <a href="#">Nous contacter</a>
-                    </nav>
-                    <a class="button_cta">Obtenir un rendez-vous</a>
+                <h1>Réinventons l’acquisition client.</h1>
+                <p>Get access to a multitude of opportunities with Arion, the pioneering customer acquisition platform developed in France. Ask for an audit of your visibility now to join our community of entrepreneurs.</p>
+                <div class="swiper-container" id="hero_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide trustpilot">
+                            <img src="./src/img/qrcode.png" />
+                            <div class="sl_content">
+                                <img src="./src/img/Trustpilot svg.svg" />
+                                <span>Voir nos 8 avis sur</span>
+                                <strong>Scanner pour donner votre avis</strong>
+                            </div>
+                        </div>
+                        <div class="swiper-slide to_moon">
+                            <img src="./src/img/to-moon.png" />
+                            <span>To the moon.</span>
+                        </div>
+                        <div class="swiper-slide divided">
+                            <div class="top_sec">
+                                <span>150k clients</span>
+                                <div class="clients_imgs">
+                                    <img src="./src/img/clients/client-1.png" class="client-img" />
+                                    <img src="./src/img/clients/client-2.png" class="client-img" />
+                                    <img src="./src/img/clients/client-3.png" class="client-img" />
+                                    <img src="./src/img/clients/client-4.png" class="client-img" />
+                                    <div class="client-img more">100k+</div>
+                                </div>
+                            </div>
+                            <div class="bottom_sec">
+                                <img src="./src/img/arion_circles.svg" class="circles-img" />
+                                <img src="./src/img/arion_circles.svg" class="circles-img-ghost" />
+                                <div class="social_media">
+                                    <a href="#" class="social-icon"><img src="./src/img/social/facebook.svg" /></a>
+                                    <a href="#" class="social-icon"><img src="./src/img/social/google.svg" /></a>
+                                    <a href="#" class="social-icon"><img src="./src/img/social/insta.svg" /></a>
+                                    <a href="#" class="social-icon"><img src="./src/img/social/x.svg" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide how_it_works">
+                            <a href="#" class="how_it_works_btn">
+                                <img src="./src/img/start.svg" />
+                                <span>How it Works</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <div class="burger-menu" onclick="toggleBurger()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path id="top_path" fill-rule="evenodd" clip-rule="evenodd" d="M3 4.91062C3 4.36821 3.44772 3.9285 4 3.9285L20 3.9285C20.5523 3.9285 21 4.36821 21 4.91062C21 5.45303 20.5523 5.89275 20 5.89275L4 5.89274C3.44772 5.89274 3 5.45303 3 4.91062Z" fill="black"/>
-                      <path id="middle_path" fill-rule="evenodd" clip-rule="evenodd" d="M11.5 12.7676L20 12.7676C20.5523 12.7676 21 12.3279 21 11.7855C21 11.2431 20.5523 10.8034 20 10.8034L4 10.8034C3.44772 10.8034 3 11.2431 3 11.7855C3 12.3279 3.44771 12.7676 4 12.7676L7.5 12.7676L8.7 14.339C8.88885 14.5863 9.18524 14.7319 9.5 14.7319C9.81476 14.7319 10.1111 14.5863 10.3 14.339L11.5 12.7676Z" fill="black"/>
-                      <path id="bottom_path" fill-rule="evenodd" clip-rule="evenodd" d="M3 18.6603C3 18.1179 3.44772 17.6782 4 17.6782L20 17.6782C20.5523 17.6782 21 18.1179 21 18.6603C21 19.2028 20.5523 19.6425 20 19.6425L4 19.6425C3.44772 19.6425 3 19.2028 3 18.6603Z" fill="black"/>
-                    </svg>
-                  </div>
             </div>
-        </header>
-        <main class="home">
-            <section class="hero_section">
-                <div class="sl_container">
-                    <h1>Réinventons l’acquisition client.</h1>
-                    <p>Get access to a multitude of opportunities with Arion, the pioneering customer acquisition platform developed in France. Ask for an audit of your visibility now to join our community of entrepreneurs.</p>
-                    <div class="swiper-container" id="hero_slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide trustpilot">
-                                <img src="./src/img/qrcode.png">
-                                <div class="sl_content">
-                                    <img src="./src/img/Trustpilot svg.svg" >
-                                    <span>Voir nos 8 avis sur</span>
-                                    <strong>Scanner pour donner votre avis</strong>
-                                </div>
-                            </div>
-                            <div class="swiper-slide to_moon">
-                                <img src="./src/img/to-moon.png">
-                                <span>To the moon.</span>
-                            </div>
-                            <div class="swiper-slide divided">
-                                <div class="top_sec">
-                                    <span>150k clients</span>
-                                    <div class="clients_imgs">
-                                        <img src="./src/img/clients/client-1.png" class="client-img" >
-                                        <img src="./src/img/clients/client-2.png" class="client-img" >
-                                        <img src="./src/img/clients/client-3.png" class="client-img" >
-                                        <img src="./src/img/clients/client-4.png" class="client-img" >
-                                        <div class="client-img more">100k+</div>
-                                    </div>
-                                </div>
-                                <div class="bottom_sec">
-                                    <img src="./src/img/arion_circles.svg" class="circles-img">
-                                    <img src="./src/img/arion_circles.svg" class="circles-img-ghost">
-                                    <div class="social_media">
-                                        <a href="#" class="social-icon"><img src="./src/img/social/facebook.svg"></a>
-                                        <a href="#" class="social-icon"><img src="./src/img/social/google.svg"></a>
-                                        <a href="#" class="social-icon"><img src="./src/img/social/insta.svg"></a>
-                                        <a href="#" class="social-icon"><img src="./src/img/social/x.svg"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide how_it_works">
-                                <a href="#" class="how_it_works_btn">
-                                    <img src="./src/img/start.svg">
-                                    <span>How it Works</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>                    
-                </div>
-            </section>
-            <section class="expertise">
-                <div class="sl_container">
-                    <h2>Domaines d'expertise</h2>
-                    <p>Des compétences 360° au service de vos objectifs</p>
-                    <div class="sl_row">
-                        <div class="sl_col">
-                            <img src="./src/img/icons/social.svg">
-                            <h3>Facebook Ads / IG</h3>
-                            <p>Exploitez le potentiel illimité des publicités Meta et de Linkedin : Notre stratégie allie la création visuelle et la maîtrise de l'algorithme pour atteindre le meilleur retour sur investissement .</p>
-                            <a class="btn" href="#">Découvrir</a>
-                        </div>
-                        <div class="sl_col">
-                            <img src="./src/img/icons/chart.svg">
-                            <h3>Google Ads</h3>
-                            <p>Le meilleur moteur de recherche. Nous choisissons les meilleurs champs sémantiques. votre domaine afin d'attirer des clients personnels sur votre site Web. Être SEO et aussi le Sea. </p>
-                            <a class="btn" href="#">Découvrir</a>
-                        </div>
-                        <div class="sl_col">
-                            <img src="./src/img/icons/website.svg">
-                            <h3>Website</h3>
-                            <p>Nous réalisons des sites internet pour générer un maximum de visites et donc de prospects et clients potentiels aux meilleurs coûts.</p>
-                            <a class="btn" href="#">Découvrir</a>
-                        </div>
+        </section>
+        <section class="expertise">
+            <div class="sl_container">
+                <h2>Domaines d'expertise</h2>
+                <p>Des compétences 360° au service de vos objectifs</p>
+                <div class="sl_row">
+                    <div class="sl_col">
+                        <img src="./src/img/icons/social.svg" />
+                        <h3>Facebook Ads / IG</h3>
+                        <p>Exploitez le potentiel illimité des publicités Meta et de Linkedin : Notre stratégie allie la création visuelle et la maîtrise de l'algorithme pour atteindre le meilleur retour sur investissement .</p>
+                        <a class="btn" href="#">Découvrir</a>
                     </div>
-                </div>
-            </section>
-            <section class="work">
-                <div class="sl_container">
-                    <p><strong>Marquis Frederic x Arion</strong></p>
-                    <h2>Work together. Grow together.</h2>
-                    <p>
-                        En tant que fondateur d'Arion, je sais que le monde qui nous entoure est en constante évolution. 
-                        Vos besoins, vos problématiques ne sont plus les mêmes qu'auparavant. 
-                        C’est pour cela que chez Arion nous avons à cœur de pouvoir vous apporter nos solutions dédiées et personnalisées.<br>
-                        Nous croyons fermement au pouvoir du phygital pour augmenter votre visibilité, votre taux de conversion et votre chiffre d'affaires.<br>
-                        Chez Arion, nous mettons à votre disposition notre expertise terrain de plus de 10 ans, alliée à notre maîtrise des stratégies digitales pour vous offrir un accompagnement personnalisé Votre satisfaction est notre priorité absolue.
-                    </p>
-                    <a class="btn" href="#">En savoir plus </a>
-                    <img src="./src/img/FredMarquis.jfif" >
-                </div>
-            </section>
-            <section class="impact">
-                <div class="sl_container">
-                    <h2>Arion impact</h2>
-                    <div class="sl_row">
-                        <div class="sl_col">
-                            <h3>+96%</h3>
-                            <p>Customer Satisfaction</p>
-                        </div>
-                        <div class="sl_col">
-                            <h3>+1M</h3>
-                            <p>Generated Visits</p>
-                        </div>
-                        <div class="sl_col">
-                            <h3>+25</h3>
-                            <p>Accompanied Customers</p>
-                        </div>
+                    <div class="sl_col">
+                        <img src="./src/img/icons/chart.svg" />
+                        <h3>Google Ads</h3>
+                        <p>Le meilleur moteur de recherche. Nous choisissons les meilleurs champs sémantiques. votre domaine afin d'attirer des clients personnels sur votre site Web. Être SEO et aussi le Sea.</p>
+                        <a class="btn" href="#">Découvrir</a>
                     </div>
-                </div>
-            </section>
-            <section class="circles">
-                <div class="middle_logo">
-                    <img src="./src/img/arion_logo.svg">
-                </div>
-                <div class="circle"></div>
-                <div class="circle link_5">
-                    <a href="#">Nice</a>
-                    <a href="#">Avranches</a>
-                    <a href="#">Deauville</a>
-                    <a href="#">Granville</a>
-                    <a href="#">Rennes</a>
-                </div>
-                <div class="circle"></div>
-                <div class="circle link_2">
-                    <a href="#">Nantes</a>
-                    <a href="#">Angers</a>
-                </div>
-                <div class="circle link_4">
-                    <a href="#">Paris</a>
-                    <a href="#">Cholet</a>
-                    <a href="#">Caen</a>
-                    <a href="#">Cannes</a>
-                </div>
-            </section>
-            <section class="reviews">
-                <div class="sl_container">
-                    <h2>Avis Trustpilot</h2>
-                    <div class="reviews_container">
-                        <div class="single_review">
-                            <div class="review_top">
-                                <div class="client-img">
-                                    <img src="./src/img/clients/client-2.png">
-                                    <img src="./src/img/badge.svg" class="badge">
-                                </div>
-                                <strong>Mickael Gimer</strong>
-                            </div>
-                            <span>Une excellente expertise ...</span>
-                            <p>Une excellente expertise et un accompagnement adapté pour chaque situation. Rien à redire c'est tout simplement parfait</p>
-                            <img src="./src/img/stars.svg" class="stars">
-                        </div>
-                        <div class="single_review">
-                            <div class="review_top">
-                                <div class="client-img">
-                                    <img src="./src/img/clients/client-2.png">
-                                    <img src="./src/img/badge.svg" class="badge">
-                                </div>
-                                <strong>Mickael Gimer</strong>
-                            </div>
-                            <span>Une excellente expertise ...</span>
-                            <p>Une excellente expertise et un accompagnement adapté pour chaque situation. Rien à redire c'est tout simplement parfait</p>
-                            <img src="./src/img/stars.svg" class="stars">
-                        </div>
-                        <div class="single_review">
-                            <div class="review_top">
-                                <div class="client-img">
-                                    <img src="./src/img/clients/client-2.png">
-                                    <img src="./src/img/badge.svg" class="badge">
-                                </div>
-                                <strong>Mickael Gimer</strong>
-                            </div>
-                            <span>Une excellente expertise ...</span>
-                            <p>Une excellente expertise et un accompagnement adapté pour chaque situation. Rien à redire c'est tout simplement parfait</p>
-                            <img src="./src/img/stars.svg" class="stars">
-                        </div>
-                        <div class="single_review">
-                            <div class="review_top">
-                                <div class="client-img">
-                                    <img src="./src/img/clients/client-2.png">
-                                    <img src="./src/img/badge.svg" class="badge">
-                                </div>
-                                <strong>Mickael Gimer</strong>
-                            </div>
-                            <span>Une excellente expertise ...</span>
-                            <p>Une excellente expertise et un accompagnement adapté pour chaque situation. Rien à redire c'est tout simplement parfait</p>
-                            <img src="./src/img/stars.svg" class="stars">
-                        </div>
-                        <div class="single_review">
-                            <div class="review_top">
-                                <div class="client-img">
-                                    <img src="./src/img/clients/client-2.png">
-                                    <img src="./src/img/badge.svg" class="badge">
-                                </div>
-                                <strong>Mickael Gimer</strong>
-                            </div>
-                            <span>Une excellente expertise ...</span>
-                            <p>Une excellente expertise et un accompagnement adapté pour chaque situation. Rien à redire c'est tout simplement parfait</p>
-                            <img src="./src/img/stars.svg" class="stars">
-                        </div>
-                        <div class="single_review">
-                            <div class="review_top">
-                                <div class="client-img">
-                                    <img src="./src/img/clients/client-2.png">
-                                    <img src="./src/img/badge.svg" class="badge">
-                                </div>
-                                <strong>Mickael Gimer</strong>
-                            </div>
-                            <span>Une excellente expertise ...</span>
-                            <p>Une excellente expertise et un accompagnement adapté pour chaque situation. Rien à redire c'est tout simplement parfait</p>
-                            <img src="./src/img/stars.svg" class="stars">
-                        </div>
-                    </div>
-                    <a href="#" class="btn">Voir plus</a>
-                </div>
-            </section>
-            <section class="brands">
-                <div class="sl_container">
-                    <h2>Nous sommes sur leurs lèvres</h2>
-                    <div class="brands_logos">
-                        <img src="./src/img/brands/google.png">
-                        <img src="./src/img/brands/bfmbusiness.png">
-                        <img src="./src/img/brands/meta.png">
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="stay_informed">
-                <div class="sl_container">
-                    <div class="sl_content">
-                        <h2>Stay informed.</h2>
-                        <p>Receive our advice and news directly by e-mail.</p>
-                        <form>
-                            <input type="email" placeholder="Enter your email">
-                            <button>Subscribe</button>
-                        </form>
-                    </div> 
-                </div>
-                <div class="circle link_1">
-                    <a href="#"><img src="./src/img/social/google.svg" ></a>
-                    <a href="#"><img src="./src/img/social/x.svg" ></a> 
-                </div> 
-                <div class="circle link_2">
-                    <a href="#"><img src="./src/img/social/facebook.svg" ></a>
-                    <a href="#"><img src="./src/img/social/insta.svg" ></a> 
-                </div> 
-            </div>
-            <div class="footer_end">
-                <div class="sl_container">
-                    <img src="./src/img/logo-footer_arion.png" class="logo_white">
-                    <h2>Let's reinvent customer acquisition.</h2>
-                    <a class="btn" href="#">We are Recruiting</a>
-                    <hr>
-                    <div class="end_content">
-                        <small>2023 Arion. All rights reserved.</small>
-                        <small>Legal notices</small>
-                        <div class="icons">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
+                    <div class="sl_col">
+                        <img src="./src/img/icons/website.svg" />
+                        <h3>Website</h3>
+                        <p>Nous réalisons des sites internet pour générer un maximum de visites et donc de prospects et clients potentiels aux meilleurs coûts.</p>
+                        <a class="btn" href="#">Découvrir</a>
                     </div>
                 </div>
             </div>
-        </footer>
-        
-        <!-- Swipers Js -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-            const swiper_home = new Swiper('#hero_slider', {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                breakpoints: {
-                    768: {
-                        slidesPerView: 4,
-                        spaceBetween: 20,
-                    },
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                },
-                on: {
-                    init: function() {
-                        setSlideHeights();
-                    },
-                    slideChange: function() {
-                        setSlideHeights();
-                    },
-                    resize: function() {
-                        setSlideHeights();
-                    }
-                },
-            });
-            function setSlideHeights() {
-                var slides = document.querySelectorAll('.swiper-slide');
-                var maxHeight = 0;
+        </section>
+        <section class="work">
+            <div class="sl_container">
+                <p><strong>Marquis Frederic x Arion</strong></p>
+                <h2>Work together. Grow together.</h2>
+                <p>
+                    En tant que fondateur d'Arion, je sais que le monde qui nous entoure est en constante évolution. Vos besoins, vos problématiques ne sont plus les mêmes qu'auparavant. C’est pour cela que chez Arion nous avons à cœur
+                    de pouvoir vous apporter nos solutions dédiées et personnalisées.<br />
+                    Nous croyons fermement au pouvoir du phygital pour augmenter votre visibilité, votre taux de conversion et votre chiffre d'affaires.<br />
+                    Chez Arion, nous mettons à votre disposition notre expertise terrain de plus de 10 ans, alliée à notre maîtrise des stratégies digitales pour vous offrir un accompagnement personnalisé Votre satisfaction est notre
+                    priorité absolue.
+                </p>
+                <a class="btn" href="#">En savoir plus </a>
+                <img src="./src/img/FredMarquis.jfif" />
+            </div>
+        </section>
+        <section class="impact">
+            <div class="sl_container">
+                <h2>Arion impact</h2>
+                <div class="sl_row">
+                    <div class="sl_col">
+                        <h3>+<span class="counter_up" data-number-target="96"></span>%</h3>
+                        <p>Customer Satisfaction</p>
+                    </div>
+                    <div class="sl_col">
+                        <h3>+<span class="counter_up" data-number-target="1"></span>M</h3>
+                        <p>Generated Visits</p>
+                    </div>
+                    <div class="sl_col">
+                        <h3>+<span class="counter_up" data-number-target="25"></span></h3>
+                        <p>Accompanied Customers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="circles">
+            <div class="middle_logo">
+                <img src="./src/img/arion_logo.svg" />
+            </div>
+            <div class="circle"></div>
+            <div class="circle link_5">
+                <a href="#">Nice</a>
+                <a href="#">Avranches</a>
+                <a href="#">Deauville</a>
+                <a href="#">Granville</a>
+                <a href="#">Rennes</a>
+            </div>
+            <div class="circle"></div>
+            <div class="circle link_2">
+                <a href="#">Nantes</a>
+                <a href="#">Angers</a>
+            </div>
+            <div class="circle link_4">
+                <a href="#">Paris</a>
+                <a href="#">Cholet</a>
+                <a href="#">Caen</a>
+                <a href="#">Cannes</a>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="sl_container">
+                <h2>Avis Trustpilot</h2>
+                <div class="for_swiper_container">
+                    <div class="reviews_container for_swiper_wrapper">
+                        <div class="single_review">
+                            <div class="review_top">
+                                <div class="client-img">
+                                    <img src="./src/img/clients/client-2.png" />
+                                    <img src="./src/img/badge.svg" class="badge" />
+                                </div>
+                                <strong>Mickael Gimer</strong>
+                            </div>
+                            <span>Une excellente expertise ...</span>
+                            <p>Une excellente expertise et un accompagnement adapté pour chaque situation. Rien à redire c'est tout simplement parfait</p>
+                            <img src="./src/img/stars.svg" class="stars" />
+                        </div>
+                        <div class="single_review">
+                            <div class="review_top">
+                                <div class="client-img">
+                                    <img src="./src/img/clients/client-2.png" />
+                                    <img src="./src/img/badge.svg" class="badge" />
+                                </div>
+                                <strong>Mickael Gimer</strong>
+                            </div>
+                            <span>Une excellente expertise ...</span>
+                            <p>Une excellente expertise et un accompagnement adapté pour chaque situation. Rien à redire c'est tout simplement parfait</p>
+                            <img src="./src/img/stars.svg" class="stars" />
+                        </div>
+                        <div class="single_review">
+                            <div class="review_top">
+                                <div class="client-img">
+                                    <img src="./src/img/clients/client-2.png" />
+                                    <img src="./src/img/badge.svg" class="badge" />
+                                </div>
+                                <strong>Mickael Gimer</strong>
+                            </div>
+                            <span>Une excellente expertise ...</span>
+                            <p>Une excellente expertise et un accompagnement adapté pour chaque situation. Rien à redire c'est tout simplement parfait</p>
+                            <img src="./src/img/stars.svg" class="stars" />
+                        </div>
+                        <div class="single_review">
+                            <div class="review_top">
+                                <div class="client-img">
+                                    <img src="./src/img/clients/client-2.png" />
+                                    <img src="./src/img/badge.svg" class="badge" />
+                                </div>
+                                <strong>Mickael Gimer</strong>
+                            </div>
+                            <span>Une excellente expertise ...</span>
+                            <p>Une excellente expertise et un accompagnement adapté pour chaque situation. Rien à redire c'est tout simplement parfait</p>
+                            <img src="./src/img/stars.svg" class="stars" />
+                        </div>
+                        <div class="single_review">
+                            <div class="review_top">
+                                <div class="client-img">
+                                    <img src="./src/img/clients/client-2.png" />
+                                    <img src="./src/img/badge.svg" class="badge" />
+                                </div>
+                                <strong>Mickael Gimer</strong>
+                            </div>
+                            <span>Une excellente expertise ...</span>
+                            <p>Une excellente expertise et un accompagnement adapté pour chaque situation. Rien à redire c'est tout simplement parfait</p>
+                            <img src="./src/img/stars.svg" class="stars" />
+                        </div>
+                        <div class="single_review">
+                            <div class="review_top">
+                                <div class="client-img">
+                                    <img src="./src/img/clients/client-2.png" />
+                                    <img src="./src/img/badge.svg" class="badge" />
+                                </div>
+                                <strong>Mickael Gimer</strong>
+                            </div>
+                            <span>Une excellente expertise ...</span>
+                            <p>Une excellente expertise et un accompagnement adapté pour chaque situation. Rien à redire c'est tout simplement parfait</p>
+                            <img src="./src/img/stars.svg" class="stars" />
+                        </div>
+                    </div>
+                    <div class="mobile_nav">
+                        <i class="fa-solid fa-chevron-left to_left"></i>
+                        <i class="fa-solid fa-chevron-right to_right"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">Voir plus</a>
+            </div>
+        </section>
+        <section class="brands">
+            <div class="sl_container">
+                <h2>Nous sommes sur leurs lèvres</h2>
+                <div class="brands_logos">
+                    <img src="./src/img/brands/google.png" />
+                    <img src="./src/img/brands/bfmbusiness.png" />
+                    <img src="./src/img/brands/meta.png" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="stay_informed">
+            <div class="sl_container">
+                <div class="sl_content">
+                    <h2>Stay informed.</h2>
+                    <p>Receive our advice and news directly by e-mail.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email" />
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="circle link_1">
+                <a href="#"><img src="./src/img/social/google.svg" /></a>
+                <a href="#"><img src="./src/img/social/x.svg" /></a>
+            </div>
+            <div class="circle link_2">
+                <a href="#"><img src="./src/img/social/facebook.svg" /></a>
+                <a href="#"><img src="./src/img/social/insta.svg" /></a>
+            </div>
+        </div>
+        <div class="footer_end">
+            <div class="sl_container">
+                <img src="./src/img/logo-footer_arion.png" class="logo_white" />
+                <h2>Let's reinvent customer acquisition.</h2>
+                <a class="btn" href="#">We are Recruiting</a>
+                <hr />
+                <div class="end_content">
+                    <small>2023 Arion. All rights reserved.</small>
+                    <small>Legal notices</small>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-                slides.forEach(function(slide) {
-                    slide.style.height = ''; // Reset height to recalculate properly
-                    var slideHeight = slide.offsetHeight;
-                    if (slideHeight > maxHeight) {
+    <!-- Swipers Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper_home = new Swiper("#hero_slider", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            breakpoints: {
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            on: {
+                init: function () {
+                    setSlideHeights();
+                },
+                slideChange: function () {
+                    setSlideHeights();
+                },
+                resize: function () {
+                    setSlideHeights();
+                },
+            },
+        });
+        function setSlideHeights() {
+            var slides = document.querySelectorAll("#hero_slider .swiper-slide");
+            var maxHeight = 0;
+
+            slides.forEach(function (slide) {
+                slide.style.height = ""; // Reset height to recalculate properly
+                var slideHeight = slide.offsetHeight;
+                if (slideHeight > maxHeight) {
                     maxHeight = slideHeight;
-                    }
+                }
+            });
+
+            slides.forEach(function (slide) {
+                slide.style.height = maxHeight + "px";
+            });
+        }
+    </script>
+    <script>
+        function initReviewSlider() {
+            if (window.innerWidth < 768) { 
+                const for_swiper_container = document.querySelector('.reviews .for_swiper_container');
+                const for_swiper_wrapper = document.querySelector('.reviews .for_swiper_wrapper');
+                for_swiper_container.classList.add('swiper-container');
+                for_swiper_wrapper.classList.add('swiper-wrapper');
+                // All slides
+                const reviews_slides = document.querySelectorAll('.reviews .single_review');
+                reviews_slides.forEach(s_review => {
+                    s_review.classList.add('swiper-slide');
                 });
 
-                slides.forEach(function(slide) {
-                    slide.style.height = maxHeight + 'px';
-                });
+                // Initialize the slider
+                const reviewsSwiper = new Swiper('.reviews .for_swiper_container', {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    navigation: {
+                        nextEl: ".reviews .to_right",
+                        prevEl: ".reviews .to_left",
+                    },
+                })
             }
-        </script>
-        <!-- Burger Animation -->
-        <script>
-            function toggleBurger() {
-                const burger = document.querySelector('.burger-menu');
-                burger.classList.toggle('burger-open');
-            }
-        </script>
-    </body>
-</html> 
+        }
+        window.addEventListener('resize', initReviewSlider);
+        window.addEventListener('load', initReviewSlider);
+    </script>
+<script>
+    let isCounted = false;
+
+    function startCounting() {
+        const counterElements = document.querySelectorAll('.impact .counter_up');
+
+        counterElements.forEach(element => {
+            const target = parseInt(element.getAttribute('data-number-target'), 10);
+            let counterValue = 0;
+
+            const counterInterval = setInterval(() => {
+                if (counterValue !== target) {
+                    counterValue++;
+                    element.innerHTML = counterValue;
+                } else {
+                    clearInterval(counterInterval); // Clear the interval when target is reached
+                }
+            }, 20); // Adjust the interval duration for smoother animation
+        });
+    }
+
+    window.addEventListener('scroll', () => {
+        const impactSection = document.querySelector('.impact'); 
+
+        if (window.scrollY > impactSection.offsetTop - 100 && !isCounted) {
+            startCounting();
+            isCounted = true;
+        }
+    });
+</script>
+
+    <script src="./src/js/main.js"></script> 
+</body>
+</html>

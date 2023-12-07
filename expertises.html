@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arion réinventons l'acquisition client</title>
+    <meta name="description" content="site officiel de Arion Consulting" />
+    <meta name="trustpilot-one-time-domain-verification-id" content="cb837856-f152-4c0e-b61c-e43709bd39fe" />
+    <meta name="keywords" content="home" />
+    <link rel="icon" href="src/img/logo-footer_arion.png" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="src/css/main.css" />
+    <!-- Swipers Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Fontawesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+        <div class="sl_container">
+            <a href="/"><img src="./src/img/logo-header.png" alt="Arion Consulting" class="logo" /></a>
+            <div class="right_side">
+                <nav>
+                    <a href="/arion-adn.html">Arion Notre ADN</a>
+                    <a href="/expertises.html">Nos expertises</a>
+                    <a href="recrutement.html">Nous recrutons</a>
+                    <a href="contact.html">Nous contacter</a>
+                </nav>
+                <a class="btn" href="rdv.html">Obtenir un rendez-vous</a>
+            </div>
+            <div class="burger-menu" onclick="toggleBurger()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        id="top_path"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 4.91062C3 4.36821 3.44772 3.9285 4 3.9285L20 3.9285C20.5523 3.9285 21 4.36821 21 4.91062C21 5.45303 20.5523 5.89275 20 5.89275L4 5.89274C3.44772 5.89274 3 5.45303 3 4.91062Z"
+                        fill="black"
+                    />
+                    <path
+                        id="middle_path"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.5 12.7676L20 12.7676C20.5523 12.7676 21 12.3279 21 11.7855C21 11.2431 20.5523 10.8034 20 10.8034L4 10.8034C3.44772 10.8034 3 11.2431 3 11.7855C3 12.3279 3.44771 12.7676 4 12.7676L7.5 12.7676L8.7 14.339C8.88885 14.5863 9.18524 14.7319 9.5 14.7319C9.81476 14.7319 10.1111 14.5863 10.3 14.339L11.5 12.7676Z"
+                        fill="black"
+                    />
+                    <path
+                        id="bottom_path"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 18.6603C3 18.1179 3.44772 17.6782 4 17.6782L20 17.6782C20.5523 17.6782 21 18.1179 21 18.6603C21 19.2028 20.5523 19.6425 20 19.6425L4 19.6425C3.44772 19.6425 3 19.2028 3 18.6603Z"
+                        fill="black"
+                    />
+                </svg>
+            </div> 
+        </div>
+    </header>
+    <main class="expertises">
+        <section class="booster">
+            <div class="sl_container">
+                <h2>Créez un site web performant pour booster votre acquisition client.</h2>
+                <img src="./src/img/expertises.svg" class="full_width">
+            </div>
+        </section>
+        <section class="performance">
+            <div class="sl_container">
+                <div class="img_txt_row">
+                    <img src="./src/img/analytics_wow.svg" class="img_col">
+                    <div class="text_col">
+                        <h2>Un site Web performant un levier clé de réussite </h2>
+                        <p>Nous mettons à votre disposition notre expertise complète dans la réalisation de vos sites internet. Vous avez besoin de leads qualifiés pour développer votre CA ? Vous êtes au bon endroit. Passez à l’action dès maintenant en réservant votre audit. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="types">
+            <div class="sl_container">
+                <h2>Les 4 types d'optimisations de site web</h2>
+                <div class="sl_row">
+                    <div class="sl_col">
+                        <img src="./src/img/expertises types/positionement.svg" />
+                        <h3>Le positionnement marketing</h3>
+                        <p>Nous perfectionnons constamment notre stratégie pour répondre de manière optimale à vos besoins et vos désirs </p>
+                    </div>
+                    <div class="sl_col">
+                        <img src="./src/img/expertises types/experience.svg" />
+                        <h3>L'expérience utilisateur </h3>
+                        <p>Nous mettons un point d’honneur sur l’amélioration de l'expérience utilisateur afin de rendre la navigation fluide et efficace. Votre site est adapté et réactif = un taux de conversion qui bondit</p>
+                    </div>
+                    <div class="sl_col">
+                        <img src="./src/img/expertises types/copywriting.svg" />
+                        <h3>Le copywriting</h3>
+                        <p>Les mots ont de l’impact. Il faut captiver votre audience dès les premières secondes. Nous disposons de ces ressources pour vous permettre de faire la différence</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="sl_container">
+                <div class="for_swiper_container">
+                    <div class="for_swiper_wrapper">
+                        <div class="step_col for_swiper_slide">
+                            <div class="top_step">
+                                <div class="number">01</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="step_content">
+                                <h4>1. Analyse de votre marché </h4>
+                                <p>C’est la base de travail. Nous allons travailler en étroite collaboration pour comprendre, connaître et identifier votre marché. Nous menons une analyse précise de votre concurrence. Le but est d’obtenir le positionnement idéal dès le départ </p>
+                            </div>
+                        </div>
+                        <div class="step_col for_swiper_slide">
+                            <div class="top_step">
+                                <div class="number">02</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="step_content">
+                                <h4>2. Cahier des charges </h4>
+                                <p>Il s’agit d’un document qui stipule ce que vous souhaitez pour votre site internet (charte graphique, prestations attendues, livraison…). Nous travaillons en toute transparence afin de vous offrir un service de qualité. Chez nous, pas de frais cachés</p>
+                            </div>
+                        </div>
+                        <div class="step_col for_swiper_slide">
+                            <div class="top_step">
+                                <div class="number">03</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="step_content">
+                                <h4>3. Maquette</h4>
+                                <p>CLes étapes précédentes sont validées. Nous sommes arrivés au moment tant attendu. Nous réalisons la maquette de votre site, ce qui vous permet d’avoir un rendu en avant première de notre travail.</p>
+                            </div>
+                        </div>
+                        <div class="step_col for_swiper_slide">
+                            <div class="top_step">
+                                <div class="number">04</div> 
+                            </div>
+                            <div class="step_content">
+                                <h4>4. Lancement et optimisation</h4>
+                                <p>Votre site est prêt à capter l’attention. Pour accompagner son lancement nous mettons en place une campagne pour optimiser vos performances afin de booster votre visibilité en ligne.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="mobile_nav">
+                        <i class="fa-solid fa-chevron-left to_left"></i>
+                        <i class="fa-solid fa-chevron-right to_right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ads">
+            <div class="sl_container">
+                <h2>Google Ads : générez votre acquisition client </h2>
+                <img src="./src/img/google_ads.svg" class="full_width">
+            </div>
+        </section>
+        <section class="why_arion">
+            <div class="sl_container">
+                <div class="img_txt_row">
+                    <div class="text_col">
+                        <h2>Pourquoi choisir Arion pour vos campagnes d'acquisition client ?</h2>
+                        <p><strong>Optimisez votre présence & boostez votre visibilité sur l’un des moteurs de recherches les plus influents du marché.</strong></p>
+                        <p>Nous mettons à votre disposition des experts dans ce domaine. Grâce à nos stratégies nous maximisons l’impact de toutes vos campagnes pour dynamiser votre présence en ligne.</p>
+                        <p>Nous analysons vos résultats afin de vous proposer un service sur mesure. Notre but est de vous permettre d'atteindre vos objectifs grâce à notre expertise dans le domaine de l'acquisition clients</p>
+                    </div>
+                    <img src="./src/img/why_arion.svg" class="img_col"> 
+                </div>
+            </div>
+        </section>
+        <section class="compagnes">
+            <div class="sl_container">
+                <h2>Les type des campagnes Google </h2>
+                <p>pour optimiser votre acquisition client </p>
+                <div class="for_swiper_container">
+                    <div class="compagnes_cards for_swiper_wrapper">
+                        <div class="single_card for_swiper_slide">
+                            <div class="card_icon">
+                                <img src="./src/img/icons/google.svg" >
+                            </div>
+                            <h4>Search</h4>
+                            <p>Les mots clés ont une importance capitale, nous mettons en place une stratégie dédiée pour assurer et pérenniser votre présence en ligne. Il faut savoir parler à Google. Nos experts le savent et ils sont doués pour ça. </p>
+                        </div>
+                        <div class="single_card for_swiper_slide">
+                            <div class="card_icon">
+                                <img src="./src/img/icons/adsense.svg" >
+                            </div>
+                            <h4>Display</h4>
+                            <p>Nous mettons en place des annonces visuellement captivantes et pertinentes pour augmenter votre visibilité sur la toile.</p>
+                        </div>
+                        <div class="single_card for_swiper_slide">
+                            <div class="card_icon">
+                                <img src="./src/img/icons/gallery.png" >
+                            </div>
+                            <h4>Discover</h4>
+                            <p>Grâce à notre savoir-faire, nous sommes capables de proposer des contenus adaptés à votre audience en fonction de leur historique web.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="mobile_nav">
+                        <i class="fa-solid fa-chevron-left to_left"></i>
+                        <i class="fa-solid fa-chevron-right to_right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="methodology">
+            <div class="sl_container">
+                <h2>Méthodologie Google Ads</h2>
+            </div>
+            <div class="section_content">
+                <div class="for_swiper_container">
+                    <div class="sl_container for_swiper_wrapper">
+                        <div class="mothodology_card for_swiper_slide">
+                            <div class="number">1</div>
+                            <h4>Compréhension de votre marché</h4>
+                            <p>Nous commençons par une analyse approfondie de votre marché et de votre concurrence afin de nous positionner de manière optimale dès le départ. A l'aide d'outils puissants, nous espionnons les landing page, annonces et site web de vos concurrents.</p>
+                        </div>
+                        <div class="mothodology_card for_swiper_slide">
+                            <div class="number">2</div>
+                            <h4>. Mots clés / Annonces</h4>
+                            <p>Nous identifions avec précision les mots clés les plus pertinents et créons des annonces convaincantes pour engager efficacement votre audience cible.</p>
+                        </div>
+                        <div class="mothodology_card for_swiper_slide">
+                            <div class="number">3</div>
+                            <h4>Installation Tracking</h4>
+                            <p>Votre campagne est intégrée à Google Ads, avec un système de suivi avancé pour les conversions. Nous peaufinons ensuite la landing page pour en maximiser l'éfficacité.</p>
+                        </div>
+                        <div class="mothodology_card for_swiper_slide">
+                            <div class="number">4</div>
+                            <h4>Lancement et optimisation</h4>
+                            <p>Vous êtes maintenant prêt à capter vos premier leads qualifiés sur Google Ads.Laissez-vous optimiser les performances de votre campagnes chaque semaine pour booster votre chiffre d'affaire et atteindre vos objectifs !</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="mobile_nav">
+                        <i class="fa-solid fa-chevron-left to_left"></i>
+                        <i class="fa-solid fa-chevron-right to_right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ads meta">
+            <div class="sl_container">
+                <h2>Meta Ads : un levier puissant pour votre acquisition clients sans limite </h2>
+                <p>Optimiser votre acquisition client grâce à des campagnes meta ads performantes.</p>
+                <img src="./src/img/meta_ads.svg" class="full_width">
+            </div>
+        </section>
+        <section class="why_choose">
+            <div class="sl_container">
+                <div class="img_txt_row">
+                    <img src="./src/img/social_media_card.svg" class="img_col">
+                    <div class="text_col">
+                        <h2>Pourquoi choisir Arion pour vos campagnes d'acquisition client ?</h2>
+                        <p>Chaque jour, des milliards de recherches sont effectuées sur Internet, offrant une opportunité exceptionnelle sur Google Ads pour atteindre un public diversifié, qu'il s'agisse de clients B2C ou B2B. Arion met à votre disposition une équipe d'experts en acquisition client, dédiée à l'amélioration des performances. Nous concevons des stratégies de ciblage précises afin de maximiser l'impact de vos campagnes publicitaires. Grâce à une analyse minutieuse de vos résultats et à une surveillance constante de vos indicateurs clés de performance, nous prenons des décisions éclairées pour optimiser en permanence vos performances sur Google Ads. Obtenez des résultats tangibles et atteignez vos objectifs marketing en faisant confiance à notre expertise approfondie chez Arion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="facebook_ads">
+            <div class="sl_container">
+                <h2>Méthodologie Facebook Ads</h2>
+                <div class="for_swiper_container">
+                    <div class="cards_container for_swiper_wrapper">
+                        <div class="single_card for_swiper_slide">
+                            <div class="number">1</div>
+                            <h4>Compréhension de votre marché</h4>
+                            <p>Nous commençons par une analyse approfondie de votre marché et de votre concurrence sur META Ads afin de vous positionner de manière optimale dès le départ. </p>
+                        </div>
+                        <div class="single_card for_swiper_slide">
+                            <div class="number">2</div>
+                            <h4>Création visuels</h4>
+                            <p>En tirant parti de notre connaissance de votre marché, nous réalisions des visuels qui marient avec élégance esthétique et clarté du message.</p>
+                        </div>
+                        <div class="single_card for_swiper_slide">
+                            <div class="number">3</div>
+                            <h4>Choix du type de campagne</h4>
+                            <p>Pour chaque catégorie de prospects, il existe une campagne Meta appropriée. Nous sélectionnons judicieusement celles qui maximiseront vos performances.</p>
+                        </div>
+                        <div class="single_card for_swiper_slide">
+                            <div class="number">4</div>
+                            <h4>Lancement et optimisation</h4>
+                            <p>Vous êtes maintenant prêt à capter vos premiers leads qualifiés. Laissez-nous optimiser les performances de votre campagne chaque semaine pour booster votre chiffre d’affaires et atteindre vos objectifs !</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="mobile_nav floating_nav">
+                        <i class="fa-solid fa-chevron-left to_left"></i>
+                        <i class="fa-solid fa-chevron-right to_right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="stay_informed">
+            <div class="sl_container">
+                <div class="sl_content">
+                    <h2>Stay informed.</h2>
+                    <p>Receive our advice and news directly by e-mail.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email" />
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="circle link_1">
+                <a href="#"><img src="./src/img/social/google.svg" /></a>
+                <a href="#"><img src="./src/img/social/x.svg" /></a>
+            </div>
+            <div class="circle link_2">
+                <a href="#"><img src="./src/img/social/facebook.svg" /></a>
+                <a href="#"><img src="./src/img/social/insta.svg" /></a>
+            </div>
+        </div>
+        <div class="footer_end">
+            <div class="sl_container">
+                <img src="./src/img/logo-footer_arion.png" class="logo_white" />
+                <h2>Let's reinvent customer acquisition.</h2>
+                <a class="btn" href="#">We are Recruiting</a>
+                <hr />
+                <div class="end_content">
+                    <small>2023 Arion. All rights reserved.</small>
+                    <small>Legal notices</small>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swipers Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const elementsToApplySwiper = ['.steps', '.compagnes', '.methodology', '.facebook_ads'];
+
+        function initStepSlider(elementSelectors) {
+            if (window.innerWidth < 768) {
+                elementSelectors.forEach((elementSelector, indx) => {
+                    const targetElement = document.querySelector(elementSelector);
+                    if (targetElement) {
+                        const swiperContainer = targetElement.querySelector('.for_swiper_container');
+                        const swiperWrapper = targetElement.querySelector('.for_swiper_wrapper');
+                        
+                        if (swiperContainer && swiperWrapper) {
+                            swiperContainer.classList.add('swiper-container');
+                            swiperWrapper.classList.add('swiper-wrapper');
+                            
+                            const stepSlides = targetElement.querySelectorAll('.for_swiper_slide');
+                            stepSlides.forEach(slide => {
+                                slide.classList.add('swiper-slide');
+                            });
+                            let space_between = 20;
+                            if (indx == 0) {  
+                                space_between = 0;                              
+                            }
+                            const stepsSwiper = new Swiper(swiperContainer, {
+                                slidesPerView: 1,
+                                spaceBetween: space_between,    
+                                navigation: {
+                                    nextEl: targetElement.querySelector('.to_right'),
+                                    prevEl: targetElement.querySelector('.to_left'),
+                                },
+                                pagination: {
+                                    el: targetElement.querySelector('.swiper-pagination'),
+                                    clickable: true
+                                },
+                            });
+                        }
+                    }
+                });
+            }
+        }
+
+        function initializeSliderOnResize() {
+            initStepSlider(elementsToApplySwiper);
+        }
+
+        window.addEventListener('resize', initializeSliderOnResize);
+        window.addEventListener('load', initializeSliderOnResize);
+    </script>
+    <script src="./src/js/main.js"></script> 
+</body>
+</html>

@@ -7,6 +7,9 @@
 
 /*-----------| Pages |-----------*/ 
 @import './pages/homepage';
+@import './pages/arion_adn';
+@import './pages/expertises';
+@import './pages/form_page';
 
 
 /*-------------------------------------|
@@ -15,7 +18,8 @@
 
 /*-----------| Header |-----------*/ 
 header {
-    background: #F5F5F5;
+    background: #F5F5F5; 
+    z-index: 20; 
     .sl_container {
         display: flex;
         justify-content: space-between;
@@ -24,17 +28,22 @@ header {
             display: flex;
             align-items: center;
             gap: 50px;
-            .button_cta {
-                background: #594FF4;
-                border-radius: 60px;
-                padding: 20px 40px;
-                color: white;
+            .btn {
+                background: #594FF4; 
+                transition: .3s;
+                &:hover {
+                    background: var(--global-text-color);
+                }
             }
             nav {
                 display: flex;
                 gap: 40px;
                 a {
                     font-weight: 500;
+                    transition: .3s;
+                    &:hover {
+                        color: #594FF4;
+                    }
                 }
             }
         }
@@ -47,13 +56,39 @@ header {
 }
 @media (max-width: 768px) {
     header {
+        position: relative;
+        &.open_menu {
+            .sl_container {
+                .right_side {
+                    opacity: 1;
+                    pointer-events: all;
+                    transform: translateY(0);
+                }
+            }
+        }
         .sl_container { 
             align-items: center;
             .right_side {
-                display: none;
+                z-index: 11;
+                display: flex;
+                position: absolute;
+                width: calc(100% - 40px);
+                top: calc(100% + 10px);
+                background: white;
+                border-radius: 5px;
+                border: 1px solid rgba(255, 255, 255, 0.20);
+                padding: 30px 16px;
+                flex-direction: column;
+                align-items: flex-start;
+                transition: .3s;
+                opacity: 0;
+                pointer-events: none;
+                transform: translateY(10px);
+                nav {
+                    flex-direction: column;
+                }
             }
         }
-        /* Add your styles for the burger menu here */
         .burger-menu {
             cursor: pointer;
             path {
@@ -232,6 +267,101 @@ footer {
                         @include toCenter();
                         background: rgba(255, 255, 255, 0.10);
                         color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        .stay_informed {
+            height: 328px;
+            .sl_content { 
+                position: relative;
+                z-index: 1; 
+                form {
+                    height: 52px;  
+                    button { 
+                        padding: 15px 20px; 
+                    }
+                    input {
+                        padding-left: 16px;
+                    }
+                }
+                * {
+                    color: white;
+                }
+            }
+            .circle { 
+                a { 
+                    height: 40px;
+                    width: 40px; 
+                    img {
+                        height: 20px;
+                        width:  20px;
+                    }
+                } 
+                &.link_2 {
+                    a:nth-child(1) {
+                        top: 13%;
+                        left: 15%;
+                    } 
+                    a:nth-child(2) {
+                        top: 13%;
+                        right: 10%; 
+                        transform: unset;
+                    } 
+                }
+                &.link_1 {
+                    a:nth-child(1) {
+                        bottom: 7%;
+                        left: 2%; 
+                        transform: unset;
+                    } 
+                    a:nth-child(2) {
+                        bottom: 7%;
+                        right: 2%; 
+                        transform: unset;
+                    } 
+                }
+            }
+            @for $i from 1 through 9 {
+                $secPercent: 65% + ($i * 15%); 
+                .circle:nth-child(#{$i}) { 
+                    height: $secPercent;
+                } 
+            }
+        }
+        .footer_end {   
+            .sl_container {
+                @include toCenter();
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                .btn { 
+                    margin: {
+                        top: 30px;
+                        bottom: 40px;
+                    }
+                }
+                h2 {
+                    font-size: 16px;
+                }
+                .end_content {
+                    flex-wrap: wrap;
+                    justify-content: space-between; 
+                    .icons {
+                        margin: {
+                            left: auto;
+                            right: auto;
+                            top: 20px;
+                        }
+                        a {
+                            width: 60px;
+                            height: 60px;
+                            font-size: 24px;
+                        }
                     }
                 }
             }
