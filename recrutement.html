@@ -21,44 +21,45 @@
 </head>
 <body>
     <header>
-        <div class="sl_container">
-            <a href="/"><img src="./src/img/logo-header.png" alt="Arion Consulting" class="logo" /></a>
-            <div class="right_side">
-                <nav>
-                    <a href="/arion-adn.html">Arion Notre ADN</a>
-                    <a href="/expertises.html">Nos expertises</a>
-                    <a href="recrutement.html">Nous recrutons</a>
-                    <a href="contact.html">Nous contacter</a>
-                </nav>
-                <a class="btn" href="rdv.html">Obtenir un rendez-vous</a>
+        <header>
+            <div class="sl_container">
+                <a href="./index.html"><img src="./src/img/logo-header.png" alt="Arion Consulting" class="logo" /></a>
+                <div class="right_side">
+                    <nav>
+                        <a href="./arion-adn.html">Arion Notre ADN</a>
+                        <a href="./expertises.html">Nos expertises</a>
+                        <a href="./recrutement.html">Nous recrutons</a>
+                        <a href="./contact.html">Nous contacter</a>
+                    </nav>
+                    <a class="btn" href="./rdv.html">Obtenir un rendez-vous</a>
+                </div>
+                <div class="burger-menu" onclick="toggleBurger()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            id="top_path"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3 4.91062C3 4.36821 3.44772 3.9285 4 3.9285L20 3.9285C20.5523 3.9285 21 4.36821 21 4.91062C21 5.45303 20.5523 5.89275 20 5.89275L4 5.89274C3.44772 5.89274 3 5.45303 3 4.91062Z"
+                            fill="black"
+                        />
+                        <path
+                            id="middle_path"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M11.5 12.7676L20 12.7676C20.5523 12.7676 21 12.3279 21 11.7855C21 11.2431 20.5523 10.8034 20 10.8034L4 10.8034C3.44772 10.8034 3 11.2431 3 11.7855C3 12.3279 3.44771 12.7676 4 12.7676L7.5 12.7676L8.7 14.339C8.88885 14.5863 9.18524 14.7319 9.5 14.7319C9.81476 14.7319 10.1111 14.5863 10.3 14.339L11.5 12.7676Z"
+                            fill="black"
+                        />
+                        <path
+                            id="bottom_path"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3 18.6603C3 18.1179 3.44772 17.6782 4 17.6782L20 17.6782C20.5523 17.6782 21 18.1179 21 18.6603C21 19.2028 20.5523 19.6425 20 19.6425L4 19.6425C3.44772 19.6425 3 19.2028 3 18.6603Z"
+                            fill="black"
+                        />
+                    </svg>
+                </div> 
             </div>
-            <div class="burger-menu" onclick="toggleBurger()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                        id="top_path"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M3 4.91062C3 4.36821 3.44772 3.9285 4 3.9285L20 3.9285C20.5523 3.9285 21 4.36821 21 4.91062C21 5.45303 20.5523 5.89275 20 5.89275L4 5.89274C3.44772 5.89274 3 5.45303 3 4.91062Z"
-                        fill="black"
-                    />
-                    <path
-                        id="middle_path"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M11.5 12.7676L20 12.7676C20.5523 12.7676 21 12.3279 21 11.7855C21 11.2431 20.5523 10.8034 20 10.8034L4 10.8034C3.44772 10.8034 3 11.2431 3 11.7855C3 12.3279 3.44771 12.7676 4 12.7676L7.5 12.7676L8.7 14.339C8.88885 14.5863 9.18524 14.7319 9.5 14.7319C9.81476 14.7319 10.1111 14.5863 10.3 14.339L11.5 12.7676Z"
-                        fill="black"
-                    />
-                    <path
-                        id="bottom_path"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M3 18.6603C3 18.1179 3.44772 17.6782 4 17.6782L20 17.6782C20.5523 17.6782 21 18.1179 21 18.6603C21 19.2028 20.5523 19.6425 20 19.6425L4 19.6425C3.44772 19.6425 3 19.2028 3 18.6603Z"
-                        fill="black"
-                    />
-                </svg>
-            </div> 
-        </div>
-    </header>
+        </header>
     <main class="form_page">
         <section class="recrute">
             <div class="sl_container">
@@ -105,11 +106,11 @@
         <div class="stay_informed">
             <div class="sl_container">
                 <div class="sl_content">
-                    <h2>Stay informed.</h2>
-                    <p>Receive our advice and news directly by e-mail.</p>
+                    <h2>Restez informé.</h2>
+                    <p>Recevez notre newsletter par email.</p>
                     <form>
                         <input type="email" placeholder="Enter your email" />
-                        <button>Subscribe</button>
+                        <button>Souscrire</button>
                     </form>
                 </div>
             </div>
@@ -125,8 +126,8 @@
         <div class="footer_end">
             <div class="sl_container">
                 <img src="./src/img/logo-footer_arion.png" class="logo_white" />
-                <h2>Let's reinvent customer acquisition.</h2>
-                <a class="btn" href="#">We are Recruiting</a>
+                <h2>Réinventons l'acquisition client.</h2>
+                <a class="btn" href="#">On recrute</a>
                 <hr />
                 <div class="end_content">
                     <small>2023 Arion. All rights reserved.</small>
