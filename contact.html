@@ -30,7 +30,7 @@
                     <a href="./recrutement.html">Nous recrutons</a>
                     <a href="./contact.html">Nous contacter</a>
                 </nav>
-                <a class="btn" href="./rdv.html">Obtenir un rendez-vous</a>
+                <a class="btn" href="rdv.html">Obtenir un rendez-vous</a>
             </div>
             <div class="burger-menu" onclick="toggleBurger()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -65,37 +65,38 @@
                 <div class="form_left">
                     <img src="./src/img/contact_us_logo.png">
                 </div>
-                <div class="form_info"> 
+                <form class="form_info" name="form-info"> 
                     <div class="form_field">
                         <label for="entreprise">Nom de votre entreprise *</label>
-                        <input type="text" id="entreprise" placeholder="Ex: Gym Boxing">
+                        <input required type="text" name="entreprise" placeholder="Ex: Gym Boxing">
                     </div>
                     <div class="form_field">
                         <label for="activite">Activité principale *</label>
-                        <input type="text" id="activite" placeholder="Ex: Salle de boxe">
+                        <input required type="text" name="activite" placeholder="Ex: Salle de boxe">
                     </div> 
                     <div class="form_field">
                         <label for="localite">Localité </label>
-                        <input type="text" id="localite" placeholder="Ex: Place royal, 44000 Nantes ">
+                        <input requried type="text" name="localite" placeholder="Ex: Place royal, 44000 Nantes ">
                     </div> 
                     <div class="form_field">
                         <label for="site">Url de votre site (si vous en avez un) </label>
-                        <input type="text" id="site" placeholder="Ex: https://wwaw.gymboxing.com">
+                        <input required type="text" name="site" placeholder="Ex: https://wwaw.gymboxing.com">
                     </div> 
                     <div class="form_field">
                         <label for="email"> Email ° </label>
-                        <input type="email" id="email" placeholder="Saisissez votre e-mail ">
+                        <input required type="email" name="email" placeholder="Saisissez votre e-mail ">
                     </div> 
                     <div class="form_field">
                         <label for="tel">Numéro de téléphone </label>
-                        <input type="tel" id="tel" placeholder="Saisissez votre numéro ">
+                        <input required type="tel" name="tel" placeholder="Saisissez votre numéro ">
                     </div> 
                     <button type="submit" class="btn">Lancer mon audit</button>
+                    <script src="contact.js"></script>
                     <div class="mention_text">
                         <h5>” Champs obligatoire</h5>
-                        <p>Mentions dinformation Les données personnelles collectées à partir de ce formulaire sont destinées à Arion SAS afin de répondre, à votre demande et, sauf opposition de votre part, afin de vous envoyer des communications commerciales. Les données obligatoires vous sont signalées par un astérisque. Pour en savoir plus sur l'utilisation de vos données et pour exercer vos droits, <a href="#">cliquez ici.</a></p>
+                        <p>Mentions dinformation Les données personnelles collectées à partir de ce formulaire sont destinées à Arion SAS afin de répondre, à votre demande et, sauf opposition de votre part, afin de vous envoyer des communications commerciales. Les données obligatoires vous sont signalées par un astérisque. Pour en savoir plus sur l'utilisation de vos données et pour exercer vos droits, <a href="mentions.html">cliquez ici.</a></p>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
         <section class="visibility">
@@ -148,11 +149,11 @@
                 <a class="btn" href="#">On recrute</a>
                 <hr />
                 <div class="end_content">
-                    <small>2023 Arion. Tous droits reservé;</small>
-                    <small>Sas Arion France 49 Rue du Ponthieu 75008 Paris;</small>
-                    <small>Mentions légales</small>
+                    <small>2023 Arion. Tous droits reservé</small>
+                    <small>Sas Arion France 49 Rue du Ponthieu 75008 Paris</small>
+                    <small><a href="mentions.html" target="_blank" style="text-decoration: none;">Mentions légales</a></small>
                     <div class="icons">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100091735881012"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/arionfrance/"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/company/arionfr/"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
