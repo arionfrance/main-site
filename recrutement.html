@@ -70,29 +70,29 @@
                     <p>Chaque année, nous accueillons de nouveaux talents pour continuer à offrir à nos clients les meilleurs services et expertises. Chez Arion, nous célébrons l'excellence et l'innovation. Nous recherchons des professionnels passionnés prêts à repousser les limites du marketing digital. En rejoignant notre équipe, vous aurez l'opportunité de travailler sur des projets stimulants et de contribuer activement au succès de nos clients.
                     </p>
                 </div>
-                <div class="form_info">
+                <form class="form_info" name="form-info">
                     <div class="sl_row">
                         <div class="form_field">
                             <label for="name">Nom</label>
-                            <input type="text" id="name" placeholder="ex : Paul">
+                            <input type="text" name="name" placeholder="ex : Paul">
                         </div>
                         <div class="form_field">
                             <label for="prenom">Prénom</label>
-                            <input type="text" id="prenom" placeholder="ex : Dupont">
+                            <input type="text" name="prenom" placeholder="ex : Dupont">
                         </div>
                     </div>
                     <div class="form_field">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="ex contact@arion-france.com">
+                        <input type="email" name="email" placeholder="ex contact@arion-france.com">
                     </div>
                     <div class="form_field">
                         <label for="telephone">Téléphone </label>
-                        <input type="tel" id="telephone" placeholder="07 49 85 11 25">
+                        <input type="tel" name="telephone" placeholder="07 49 85 11 25">
                     </div>
                     <div class="form_field">
                         <label for="research">Postes recherche </label>
                         <!--<input type="text" id="research" placeholder="Business developer">-->
-                        <select style="height: 60px; outline: none; border: 1px solid #dedee7;" name="research" id="research">
+                        <select style="height: 60px; outline: none; border: 1px solid #dedee7;" name="research" name="research">
                             <option value="ui-designer">UI Designer</option>
                             <option value="business-dev">Business Dev</option>
                             <option value="closers">CLosers</option>
@@ -102,10 +102,11 @@
                     </div>
                     <div class="form_field">
                         <label for="message">Message</label> 
-                        <textarea id="message" placeholder="Message"></textarea>
+                        <textarea name="message" placeholder="Message"></textarea>
                     </div>
                     <button type="submit" class="btn">Envoyer</button>
-                </div>
+                    <script src="recrutement.js"></script>
+                </form>
             </div>
         </section>
     </main>
@@ -139,7 +140,7 @@
                 <div class="end_content">
                     <small>2023 Arion. Tous droits reservé</small>
                     <small>Sas Arion France 49 Rue du Ponthieu 75008 Paris</small>
-                    <small>Mentions légales</small>
+                    <small><a href="mentions.html" target="_blank" style="text-decoration: none;">Mentions légales</a></small>
                     <div class="icons">
                         <a href="https://www.facebook.com/profile.php?id=100091735881012"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/arionfrance/"><i class="fa-brands fa-instagram"></i></a>
