@@ -27,6 +27,7 @@
             <a href="./index.html"><img src="./src/img/logo-header.png" alt="Arion Consulting" class="logo" /></a>
             <div class="right_side">
                 <nav>
+                    <a href="index.html">Accueil</a>
                     <a href="./arion-adn.html">Arion Notre ADN</a>
                     <a href="./expertises.html">Nos expertises</a>
                     <a href="./recrutement.html">Nous recrutons</a>
@@ -260,7 +261,7 @@
                         <i class="fa-solid fa-chevron-right to_right"></i>
                     </div>
                 </div>
-                <a href="#" class="btn">Voir plus</a>
+                <a href="https://fr.trustpilot.com/review/arion-france.com" target="_blank" class="btn">Voir plus</a>
             </div>
         </section>
         <section class="brands">
@@ -280,9 +281,10 @@
                 <div class="sl_content">
                     <h2>Restez informé.</h2>
                     <p>Recevez nos conseils et nos news directement par email.</p>
-                    <form>
-                        <input type="email" placeholder="Entrez votre email" />
-                        <button>Souscrire</button>
+                    <form name="souscription-form">
+                        <input name="email" type="email" placeholder="Entrez votre email" />
+                        <button type="submit">Souscrire</button>
+                        <script src="souscription.js"></script>
                     </form>
                 </div>
             </div>
@@ -299,7 +301,7 @@
             <div class="sl_container">
                 <img src="./src/img/logo-footer_arion.png" class="logo_white" />
                 <h2>Réinventons l'acquisition clients</h2>
-                <a class="btn" href="#">On recrute</a>
+                <a class="btn" href="recrutement.html">On recrute</a>
                 <hr />
                 <div class="end_content">
                     <small>2023 Arion. Tous droits reservé</small>
