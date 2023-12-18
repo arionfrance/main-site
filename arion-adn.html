@@ -118,8 +118,9 @@
                             <h3>Fred Marquis </h3>
                             <p>CEO - Head of Performance </p>
                         </div>
-                        <a class="btn" href="#">Voir plus</a>
+                        <button onclick="toggle_text();" style="border: 0; cursor: pointer;" class="btn" href="#">Voir plus</button>
                     </div>
+                    <span style="display: none; width: 50%;" id="span_txt">Expert en vente et marketing issu de startups emblématiques telles que Mister Menuiserie et Indexia licorne valorisée à 1 milliard 7, a évolué en autodidacte et rebelle, brisant les codes de l'entrepreneuriat. Outbox par nature, il insuffle une vision novatrice, mettant en avant la qualité premium pour les TPE et PME. En parallèle, il partage sa passion et son savoir en tant que professeur en école de commerce, façonnant ainsi les leaders de demain.</span>
                     <img style="border-radius: 20px;" src="./src/img/team/fred.jpg">
                 </div>
                 <div class="team_row">
@@ -128,8 +129,9 @@
                             <h3>Jeremy Imaque</h3>
                             <p>Developpeur Web </p>
                         </div>
-                        <a class="btn" href="#">Voir plus</a>
+                        <button onclick="toggle_text2();" style="border: 0; cursor: pointer;" class="btn" href="#">Voir plus</button>
                     </div>
+                    <span style="display: none; width: 50%;" id="span_txt2">En tant que jeune développeur web autodidacte, il a acquis des compétences de manière autonome. Son parcours reflète sa passion pour le développement web et son engagement à rester à jour avec les dernières technologies. Sa détermination et sa volonté de relever des défis font de lui un professionnel en devenir, prêt à contribuer de manière significative au domaine du développement web.</span>
                     <img style="border-radius: 20px;" src="./src/img/team/lucie.png">
                 </div>
                 <div class="team_row">
@@ -138,8 +140,9 @@
                             <h3>Lucie Robineau </h3>
                             <p>UI/UX designeuse</p>
                         </div>
-                        <a class="btn" href="#">Voir plus</a>
+                        <button onclick="toggle_text3();" style="border: 0; cursor: pointer;" class="btn" href="#">Voir plus</button>
                     </div>
+                    <span style="display: none; width: 50%;" id="span_txt3">Avec Lucie, c'est bien plus qu'une collaboration artistique, c'est l'assurance d'une image de marque exceptionnelle. En tant que graphiste, illustratrice et photographe, son unique objectif est de faire briller votre entreprise en mettant en lumière vos valeurs. Que vous soyez une petite entreprise pleine d'ambitions ou une entreprise établie.</span>
                     <img style="border-radius: 20px;" src="./src/img/team/lucie.jpg">
                 </div>
                 <div class="team_row">
@@ -148,11 +151,46 @@
                             <h3>Hanif Laarabi</h3>
                             <p>Developpeur Web </p>
                         </div>
-                        <a class="btn" href="#">Voir plus</a>
+                        <button onclick="toggle_text4()" style="border: 0; cursor: pointer;" class="btn" href="#">Voir plus</button>
                     </div>
+                    <span style="display: none; width: 50%;" id="span_txt4">Véritable passionné du numérique, a repoussé les frontières de l'éducation pour devenir un expert reconnu du développement backend et du SEO. Sa quête incessante de connaissances l'a propulsé au sommet de son domaine, où il excelle avec une maîtrise exceptionnelle. En tant qu'outbox, Hanif ne se contente pas de suivre les normes, il les redéfinit, apportant une perspective novatrice à chaque projet. Sa combinaison unique de compétences techniques avancées et d'esprit créatif fait de lui un atout inestimable pour notre équipe et nos clients.</span>
                     <img style="border-radius: 20px;" src="./src/img/team/hanif.jpg">
                 </div>
             </div>
+            <script>
+                function toggle_text() {
+                    var span = document.getElementById("span_txt");
+                    if(span.style.display == "none") {
+                        span.style.display = "inline";
+                    } else {
+                        span.style.display = "none";
+                    }
+                }
+                function toggle_text2() {
+                    var span = document.getElementById("span_txt2");
+                    if(span.style.display == "none") {
+                        span.style.display = "inline";
+                    } else {
+                        span.style.display = "none";
+                    }
+                }
+                function toggle_text3() {
+                    var span = document.getElementById("span_txt3");
+                    if(span.style.display == "none") {
+                        span.style.display = "inline";
+                    } else {
+                        span.style.display = "none";
+                    }
+                }
+                function toggle_text4() {
+                    var span = document.getElementById("span_txt4");
+                    if(span.style.display == "none") {
+                        span.style.display = "inline";
+                    } else {
+                        span.style.display = "none";
+                    }
+                }
+            </script>
         </section>
     </main>
     <footer>
