@@ -1,0 +1,13 @@
+.our_team .txt {
+    font-size: 14px;
+}
+@media screen and (max-width: 500px) {
+    .our_team .team_row .txt {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .our_team .team_row .txt {
+        font-size: 10px;
+    }
+}
