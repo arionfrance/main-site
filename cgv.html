@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arion réinventons l'acquisition client</title>
+    <meta name="description" content="site officiel de Arion Consulting" />
+    <meta name="trustpilot-one-time-domain-verification-id" content="cb837856-f152-4c0e-b61c-e43709bd39fe" />
+    <meta name="keywords" content="home" />
+    <link rel="icon" href="src/img/logo-footer_arion.png" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="src/css/main.css" />
+    <!-- Swipers Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Fontawesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+        <div class="sl_container">
+            <a href="./index.html"><img src="./src/img/logo-header.png" alt="Arion agence de consulting SEO/SEA/SMA" class="logo" /></a>
+            <div class="right_side">
+                <nav>
+                    <a href="index.html">Accueil</a>
+                    <a href="./arion-adn.html">Arion Notre ADN</a>
+                    <a href="./expertises.html">Nos expertises</a>
+                    <a href="./recrutement.html">Nous recrutons</a>
+                    <a href="./contact.html">Nous contacter</a>
+                </nav>
+                <a class="btn" href="rdv.html">Obtenir un rendez-vous</a>
+            </div>
+            <div class="burger-menu" onclick="toggleBurger()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        id="top_path"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 4.91062C3 4.36821 3.44772 3.9285 4 3.9285L20 3.9285C20.5523 3.9285 21 4.36821 21 4.91062C21 5.45303 20.5523 5.89275 20 5.89275L4 5.89274C3.44772 5.89274 3 5.45303 3 4.91062Z"
+                        fill="black"
+                    />
+                    <path
+                        id="middle_path"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.5 12.7676L20 12.7676C20.5523 12.7676 21 12.3279 21 11.7855C21 11.2431 20.5523 10.8034 20 10.8034L4 10.8034C3.44772 10.8034 3 11.2431 3 11.7855C3 12.3279 3.44771 12.7676 4 12.7676L7.5 12.7676L8.7 14.339C8.88885 14.5863 9.18524 14.7319 9.5 14.7319C9.81476 14.7319 10.1111 14.5863 10.3 14.339L11.5 12.7676Z"
+                        fill="black"
+                    />
+                    <path
+                        id="bottom_path"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 18.6603C3 18.1179 3.44772 17.6782 4 17.6782L20 17.6782C20.5523 17.6782 21 18.1179 21 18.6603C21 19.2028 20.5523 19.6425 20 19.6425L4 19.6425C3.44772 19.6425 3 19.2028 3 18.6603Z"
+                        fill="black"
+                    />
+                </svg>
+            </div> 
+        </div>
+    </header>
+    <style>
+        .main {
+            width: 90%;
+            margin: 0 auto;
+            padding: 100px 50px;
+        }
+        .main .title {
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .main .sub-title {
+            text-align: center;
+        }
+        .main h4 {
+            margin-top: 50px;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+    </style>
+    <main class="main">
+        <h3 class="sub-title">Conditions générales</h3>
+        <h1 class="title">arion france consulting</h1>
+        <div class="txt">
+            <h4>preambule</h4>
+            <p>
+                Le site www.arion-france.com est édité par la société Arion consulting France, dont le nom commercial est « Arion ». Elle sera désignée comme étant Arion dans la suite du présent document. 
+                Arion est une société par actions simplifiées au capital social de 1000 euros immatriculée au registre du commerce et des sociétés de Paris sous le numéro 790 685 358. 
+                Adresse de correspondance postale : Arion France, Sas Arion France 49 Rue du Ponthieu 75008 Paris 
+
+                Adresse du siège social : Sas Arion France 49 Rue du Ponthieu 75008 Paris 
+                Tel : +33 7 49 55 33 23
+                Numéro de TVA intracommunautaire : FR 44 790 685 358.
+                La société est joignable par voie électronique par le biais du formulaire disponible sur www.arion-france.com/contact.html
+                Le site www.arion-france.com et ses services sont hébergés par la société Hostinger dont le siège social est situé au 61 Lordou Vironos Street, 6023 Larnaca, Chypre.
+                Ce document annule et remplace les échanges précédents entre le Client et Arion, excepté les conditions particulières convenues entre le Client et Arion, ayant fait l'objet d'un accord signé. 
+
+            </p>
+
+
+            <h4>article 1 - definition</h4>
+            <p>
+                Arion propose un service à ses clients, qui leur permet de créer des sites internet et de gérer leur visibilité en ligne. L’Offre comprend également un service après-vente, des conseils et des services qui dépendent de l’Offre à laquelle a souscrit le Client. L’outil de création et de modification de site internet de Arion sera appelé « Outil » arion-france.com désigne le site www.arion-france.com, mais aussi ses sous-domaine ou tout autre site créé par Arion présentant ses services Le site internet créé pour le client grâce à l’Outil sera appelé « Site Arion » ou « Site »,« Client » désigne tout contractant avec Arion, qui dispose de l’Outil Arion ou de tout autre service proposé par Arion parmi lesquelles figurent les accessoires de la création du site comme le « référencement payant » ou « naturel ». « Contrat » désigne le Contrat qui lie Arion à son Client « Données » ou « Contenu(s) » désigne les informations de toute nature, sous forme numérique, comme par exemple un texte, une image, une vidéo, un fichier… « Offre » désigne la proposition commerciale mise à la disposition du Client par Arion « Internaute » désigne toute personne physique ou morale, de droit privé ou de droit public se rendant sur le Site Arion d’un Client, ou sur le site www.arion-france.com « Nom de domaine » désigne l'adresse unique choisie par le Client pour y faire apparaître le site internet qu’il aura créé par l’intermédiaire de Arion.
+            </p>
+            <h4>article 2 -  objet de la prestation arion</h4>
+            <p>
+                Arion propose à des personnes morales de droit privé ou public de concevoir des sites internet, grâce à l’Outil Arion. Il s’agit d’un outil de création de site internet dont l’accès est conditionné par un abonnement payant, éventuellement accompagné de frais de lancement, correspondant à diverses prestations fixes et continues, présentées dans une Offre. Ce service peut être complété par différentes options payantes.      
+            </p>
+
+
+            <h4>article 3 - accpectation des conditions générales</h4>
+            <p>
+                <strong>3.1 : </strong>
+                Les espaces publics de arion-france.com sont d’accès libre et gratuit à tout Internaute. La navigation suppose l’acceptation par tout Internaute des présentes conditions générales.
+                La simple visite de arion-france.com emportera acceptation pleine et entière desdites conditions. Lors de la contractualisation, cette acceptation sera confirmée par un accord par email.
+                Arion demande deux moyens de paiement à ses clients pour éviter que le site soit coupé en cas d'échec de paiement sur l'un d'entre eux. La transmission des deux moyens de paiement (numéro de RIB et carte bancaire) pourra avoir lieu par lien sécurisé ou par téléphone si le client souhaite être assisté dans cette démarche, au choix du Client. Cette transmission de coordonnées bancaires sera également suffisante pour re-confirmer l'acceptation définitive des présentes, et constitue une preuve formelle de l'accord du Client. Le Client est informé du fait que le premier paiement, correspondant aux éventuels frais fixes et la première échéance de mensualité ou d'annuité sera, dès lors, encaissé dès la transmission des coordonnées bancaires. Il a conscience du fait que la prestation de Arion est une prestation récurrente, et que ses coordonnées bancaires, qu’il aura volontairement données à Arion seront conservées par Arion (de façon cryptée) pendant la durée de la relation commerciale, afin que Arion puisse procéder à un prélèvement automatisé et récurrent des sommes dues par le Client. Ces coordonnées ne seront pas conservées au-delà de la relation contractuelle. Les conditions contractuelles des sociétés intermédiaires s’appliquent en complément des présentes (notamment celles de l’AFNIC, de l’ICANN et d’autres autorités délivrant les noms de domaine choisis par les Clients). L’Outil Arion propose une série de modèles de sites internet fortement personnalisables, contenant eux même des paramètres réglables indépendants. Ainsi les sites créés par Arion peuvent être très différents les uns les autres, tant en termes de couleurs, design, textes, images. 
+                Le Client déclare avoir librement choisi l’architecture de site internet que propose l’Outil Arion et avoir reçu toutes les informations nécessaires pour faire ce choix. L’Outil Arion est vendu tel quel, le Client ne peut donc pas réclamer l’ajout de fonctionnalités ou reprocher à Arion l’absence de certaines d’entre elles. Le Client s’engage à vérifier la légalité et l’exactitude du Contenu présent sur son Site Internet avant d’en demander sa mise en ligne, mais aussi pendant toute la durée de vie de son Site Internet. Le Client est le seul responsable du Contenu de son Site Internet. Ceci concerne le Contenu fourni par le Client, mais aussi le Contenu suggéré par Arion, dont le Client s’engage à vérifier l’exactitude et la légalité avant de confirmer la mise en ligne du Site internet.                 
+            </p>
+            <p>
+                <strong>3.2 : </strong>
+                L'acceptation des présentes conditions générales suppose de la part des Internautes qu’ils jouissent de la capacité juridique nécessaire pour cela, et qu'ils agissent en tant que professionnels. En effet, Arion n'est pas destiné aux particuliers. Dans le cas où un Client ne respecte pas ce point, et souscrit au service Arion en étant un particulier ou sans la capacité juridique de le faire, alors Arion pourra résilier le contrat unanimement, de plein droit. Le Client est informé du fait qu’aucun remboursement ne pourra être exigé dans l’hypothèse où il n’aurait pas respecté ce préalable, condition sine qua none de l'exécution de bonne foi du contrat.               
+            </p>
+            
+
+            <h4>article 4 - durée, résiliation, recondution</h4>
+            <strong>4.1 : </strong> Durée et préavis
+            <p>
+                Si le client est satisfait par l'Offre qui lui a été faite, il peut y souscrire. Le client est facturé à ce titre. Si le client perçoit une anomalie quant aux prélèvements ou paiements effectués, il est tenu d'en informer Arion dans les 20 jours qui suivent cette anomalie. Au- delà, la transaction est considérée comme non discutable par le client. Le Client est parfaitement conscient qu’à compter de la date à laquelle il souscrit à l’Offre et qu’il transmet son mode de paiement, Arion commencera à le facturer, et l’équipe Arion sera à sa disposition pour l’accompagner dans l’élaboration de son site internet. Dans le cas où le Client ne sollicite pas Arion malgré cette mise à disposition, ou dans le cas où l’attitude du Client ne mettrait pas Arion en mesure d’exécuter sa mission, le Site Internet du Client ne pourra pas être réalisé et le Client ne pourra en aucun cas se faire rembourser des sommes payées au titre de la mise à disposition du service, bien qu’il ne soit pas utilisé. Toute période entamée sera intégralement due par le Client. A l'issue de la période d'engagement de 36 mois, et sauf en cas de résiliation dans le respect de ces conditions générales, le contrat est reconduit tacitement dans les mêmes conditions.                 
+            </p>
+            <strong>4.2 : </strong>Résiliation souhaitée par le client
+            <p>
+                Dans le cas où le Client est abonné, et souhaite résilier son abonnement, il se doit de simplement l’exprimer par lettre recommandée avec accusé de réception adressée à l'adresse suivante : Arion 49 rue de Ponthieu,  75008 Paris.
+                Ce courrier recommandé avec accusé de réception est nécessaire car il confirme formellement le souhait du client de résilier le Service. Pour être prise en compte, cette lettre doit impérativement contenir les informations suivantes, permettant d’identifier formellement le client et le Site concerné : le prénom et le nom du client son numéro de client (présent sur les factures) le nom de domaine du site concerné s’il a déjà été mis en place Cette demande sera traitée dans les 20 jours ouvrés qui suivent la réception du courrier. Si le Client exprime le souhait de résilier son contrat sans respecter cette procédure, sa demande pourra ne pas être prise en compte. Dans certaines situations exceptionnelles, Arion pourra, à son bon vouloir, traiter des demandes de résiliation par email. Dans le cas où le nom de domaine du Site appartient au Client avant la contractualisation du Client, ou si Arion a souscrit à ce nom de domaine spécifiquement pour le compte du Client dans le cadre de sa prestation au moment de la contractualisation du Client, le Client pourra alors récupérer ce nom de domaine sous réserve de respecter les modalités de l'Article 5 des présentes. Si le contrat est résilié par le Client sans que le Client ait exprimé le souhait de conserver le nom de domaine conformément à l’Article 5 des présentes, Arion ne réalisera pas la démarche de transfert du nom de domaine au Client. Le Client reçoit un email de confirmation pour lui confirmer la prise en compte de la résiliation. 
+                Résiliation du service Présence Locale : A titre de complément, en cas de résiliation à l’initiative du Client du service Présence Locale, le Client aura la possibilité de - Demander gratuitement à Arion de récupérer la propriété de sa fiche Google - Demander gratuitement à Arion de supprimer l’accès de Arion à sa fiche .
+                Ces actions seront réalisées uniquement à la suite d' une demande écrite du client avant sa résiliation ou dans les 10 jours qui suivent. Dès la résiliation du service, le Client devient seul responsable, de la publication de sa fiche Google, de sa mise à jour et de sa maintenance. Arion ne sera plus en mesure d'intervenir sur sa fiche.                
+            </p>
+            <strong>4.3 : </strong>Résiliation du contrat par Arion <br>
+            <strong>4.3.1 : </strong>Résiliation pour faute du client
+            <p>
+                Si le Client ne respecte par les présentes, ou s’il enfreint la loi (par exemple via des contenus illicites), ou s’il menace ou insulte un membre de l’équipe Arion, Arion se donne la possibilité de réagir et de résilier le Contrat qui le lie au Client de plein droit pour faute, sans préavis ni indemnité. Cette résiliation interviendra dès la notification par Arion au Client de la résiliation à ses torts, par lettre recommandée avec accusé de réception ou par courriel. La période entamée sur le Client sera due, sans préjudice de tous dommages et intérêts que le Client pourrait devoir à Arion. 
+            </p>
+            <strong>4.3.2 : </strong>La résiliation souhaitée par Arion
+            <p>
+                Arion se donne également la possibilité de résilier le contrat dans d’autres cas. Sans que cela soit exhaustif, voici quelques motifs qui peuvent expliquer cette situation : utilisation de Contenus contraires aux valeurs de Arion, non réponse à une sollicitation de l'équipe Arion après plusieurs relances, attitude non cordiale vis-à-vis de l’équipe Arion, sollicitation de l’équipe Arion pour des sujets sans rapports avec l’Offre et non inclus dans celle-ci, sollicitation du service Client de façon disproportionnée par rapport à un usage « en bon père de famille », ce dernier point étant exceptionnel et concernant moins de 0,1% des Clients Arion. Cette résiliation sans faute sera notifiée au Client par courriel. Au titre de cette résiliation volontaire, Arion aura la charge de rembourser le Client de 1 mois de prestation, et de laisser un préavis de 30 jours gratuit au client pour que ce dernier puisse ainsi migrer les Contenus dont il est propriétaire chez un autre prestataire, ou de le stocker de façon autonome sur son ordinateur. Par ailleurs, le Client est conscient du fait qu’en cas de plainte motivée de la part d’un titulaire ou ayant droit présumé légitime du nom de domaine ou concernant un Contenu du Site Internet du Client, Arion se réserve la possibilité de désactiver le Site du Client en prévention, le temps qu’une procédure juridique ait lieu. 
+            </p>
+            <strong>4.4 : </strong>Droit de rétraction
+            <p>
+                Il y a normalement un délai de rétractation de 14 jours pour les contrats conclus à distance. L'article L221-28 du code de la consommation prévoit néanmoins des exceptions. Une de ces exceptions est la fourniture d'un contenu numérique non fourni sur un support matériel dont l'exécution a commencé après accord préalable exprès du consommateur et renoncement exprès à son droit de rétractation. Le Client a conscience, en contractualisant avec Arion, que la prestation commencera dès le moment où il donnera ses coordonnées bancaires à Arion, via le contact d’un conseiller Arion qui sera mis à sa disposition. Par conséquent, les Clients sont facturés dès le premier jour du contrat et ce paiement ne pourra pas donner lieu à un remboursement, que le service soit utilisé proactivement par le Client ou non. Le Client renonce de façon exprès à son droit de rétractation dès la fourniture du moyen de paiement. 
+            </p>
+
+
+            <h4>article 5 - réservation des noms de domaine et limitation de responsabilité</h4>
+            <strong>5.1 : </strong>Choix du nom de domaine client
+            <p>
+                L’usage du nom de domaine, préalablement choisi par le Client, est fait sans qu' Arion ne procède à une quelconque recherche d’antériorité ou de similitude. Arion attire l’attention du Client quant au fait que le choix du nom de domaine lui revient et qu’en conséquence la responsabilité de Arion ne pourra être engagée dans l’hypothèse où ce nom de domaine se révélerait identique ou similaire à celui d’un tiers notamment au regard du droit des marques et de la concurrence déloyale. Ainsi, la responsabilité de Arion ne sera pas engagée concernant tout litige portant sur le choix du nom de domaine.
+            </p>
+            <strong>5.2 : </strong>Disponibilité du nom de domaine choisi par le Client
+            <p>
+                Le Client est informé quant au fait qu’une disponibilité du nom de domaine au jour de la demande de création du Site ne signifie pas pour autant que le nom de domaine ne porte pas atteinte au droit d’un tiers. Le Client est informé du fait qu’il ne peut enregistrer comme nom de domaine qu’une chaîne de caractères sur laquelle il n’existe aucun droit antérieur constitué au profit d’un tiers, et qu’outre l’existence d’une marque antérieure déposée ou notoirement connue, l’antériorité peut être constituée par une dénomination sociale, une raison sociale, une appellation d’origine, un droit d’auteur, une enseigne et même un nom de domaine. Arion pourra mettre à disposition du Client quelques conseils d’ordre général concernant le choix d’un nom de domaine. Cependant, le Client est et restera le seul et unique responsable du choix du nom de domaine pour lequel il aura opté. Arion invite donc son Client à faire ses propres recherches d’antériorité et de similitude avant de solliciter, auprès de Arion, la mise en ligne d’un Site Arion associé au nom de domaine pour lequel il aura opté seul. 
+            </p>
+            <strong>5.3 : </strong>Gestion du nom de domaine pendant et après le Contrat <br>
+            <strong>5.3.1 : </strong>Le client dispose déjà d’un nom de domaine qu’il souhaite utiliser
+            <p>
+                Dans l’hypothèse où le Client est déjà titulaire du nom de domaine qu’il souhaite associer à l’Outil Arion, il devra alors transmettre sa demande à Arion. Il aura alors la possibilité de rester gérant du nom de domaine via son prestataire historique, et d'en modifier le paramétrage DNS pour que ce nom de domaine pointe vers le serveur Arion. Dans ce cas, le Client est seul responsable du paramétrage, de l’usage, et des renouvellements de son nom de domaine. 
+            </p>
+            <strong>5.3.2 : </strong>Le client souhaite que Arion achète ou gère son nom de domaine
+            <p>
+                Dans le cas où le nom de domaine est acheté par Arion, ou si le Client a transféré un nom de domaine existant à Arion, Arion pourra alors prendre en charge le renouvellement de ce nom de domaine, sous réserve d’accord du Client par email. Il est possible que Arion réalise des démarches au nom de Arion, pour une question de simplicité de procédure, mais le Client en reste bien sûr le titulaire dans le sens où il maintiendra la possibilité de récupérer ce nom de domaine dans le respect des présentes conditions générales. Dans le cas où le Client résilie son contrat conformément à l’article 4 des présentes, ce dernier pourra alors récupérer la gestion de son nom de domaine. Pour ce faire, le Client devra respecter les conditions suivantes : Il devra indiquer dans son courrier de résiliation qu’il souhaite que Arion lui fournisse le code de transfert du nom de domaine Il devra également préciser dans ce courrier le nom de domaine en question, pour éviter toute erreur Il devra prendre en charge les frais de transfert d’un montant de 5 euros HT soit 6 euros TTC, en joignant à sa lettre de résiliation un chèque de ce montant, à l’ordre de ARION FRANCE
+                Pour information, ces frais sont dus au fait que le transfert de nom de domaine nécessite une intervention manuelle de Arion. Il devra être à jour de ses paiements auprès de Arion Dans le cas où ce processus est respecté, Arion fournira au Client un code de transfert lui permettant de récupérer la gestion du nom de domaine.                
+            </p>
+            <strong>5.3.3 : </strong>Le client souhaite utiliser un nom de domaine et un site appartenant déjà à Arion
+            <p>
+                Dans de rares cas, Arion peut proposer à un Client de louer un nom de domaine et un site internet appartenant préalablement à Arion. Il s’agit de sites Internet pour lesquels Arion fournit un effort de référencement important, dont Arion a toujours été titulaire et dont Arion a produit l’immense majorité des Contenus. Dans ce cas, le Client ne pourra en aucun cas revendiquer la propriété du Site Internet, de son Contenu, ni du nom de domaine en question. 
+            </p>
+
+
+            <h4>article 6 - contractualisation</h4>
+            <strong>6.1 : </strong>Demande d'informations par le client
+            <p>
+                Une demande d’informations peut se faire via un formulaire présent sur le site arion-france.com, par téléphone, ou encore à l’oral lors d’une rencontre physique. 
+                Cette étape est facultative. 
+            </p>
+            <strong>6.2 : </strong>Consultation d'une offre
+            <p>
+                Le Client peut recevoir une Offre de plusieurs façons, notamment par email ou téléphone, ou via tout autre support. 
+            </p>
+            <strong>6.3 : </strong>Acceptation de l'Offre 
+            <p>
+                Si le client souhaite contractualiser, il est invité à passer par deux étapes. 1. Fournir ou confirmer des informations le concernant 2. Le Client devra alors fournir ou confirmer ses coordonnées bancaires afin d'effectuer son paiement. Le Client peut être assisté par Arion dans cette démarche. 
+            </p>
+            <strong>6.4 : </strong>Confirmation de la commande de l'Outil fourni par Arion
+            <p>
+                Dans le même délai, Arion s’engage à adresser au Client un courrier électronique récapitulatif confirmant la commande et son tarif. Les détails de cette commande seront mis à la disposition du Client par courriel.Une facture, correspondant à la première mensualité, sera mise à sa disposition. 
+            </p>
+            <strong>6.5 : </strong>Incompréhension
+            <p>
+                En cas d’incompréhension ou de désaccord du Client, ce dernier est invité à répondre à l’émail récapitulatif de sa commande, et s’il le souhaite, à résilier son contrat, selon la démarche décrite dans les présentes. Comme le précise l’email récapitulatif, le service de Arion donne lieu à un abonnement incluant un service continu, le Client ne pourra donc pas prétendre avoir compris qu’il s’agissant d’une prestation ponctuelle sans récurrence, ni ne pas en connaitre les modalités décrites dans l’email récapitulatif de la Commande.
+            </p>
+
+
+            <h4>article 7 - prix, paiement</h4>
+            <strong>7.1 : </strong>Prix et offre associée
+            <p>
+                Sauf précision contraire, les prix affichés, communiqués au Client, présents sur arion-france.com ou l’Outil sont présentés hors taxes. Arion pourra appliquer des évolutions tarifaires. En fonction des cas, cette évolution pourra se faire avec ou sans préavis. Voici les cas d'évolution tarifaire sans préavis et sans que cela ne puisse être à l’origine d’une résiliation anticipée du contrat de la part du Client : 1. répercuter une variation de TVA 2. augmentation limitée à 5% par an maximum, notamment en lien avec l’inflation et les investissements techniques nécessaires à la maintenance d’un service d'excellente qualité, à l'appréciation de Arion Dans tous les autres cas, Arion pourra appliquer une modification tarifaire, mais devra respecter un préavis de 45 jours minimum. Cette éventuelle évolution serait en cohérence avec l’évolution de la stratégie de Arion, des besoins de sécurité, réglementaires, et de fonctionnalités nécessaires pour maintenir un site internet à jour, mais aussi de l'inflation cumulée depuis la définition précédente du tarif. 
+            </p>
+            <strong>7.2 : </strong>Modalités de paiement
+            <p>
+                En fonction de l'Offre qui lui a été faite, le client est invité à payer par Carte Bancaire et/ou RIB et/ou chèque. Arion pourra procéder à des tentatives de paiement ou prélèvement sur les différents moyens de paiements fournis par le Client depuis le début de la relation contractuelle. Le Client est libre de communiquer ses coordonnées bancaires de façon électronique et sécurisée (via un lien sécurisé) ou par téléphone si cela lui est plus pratique et qu’il souhaite se faire assister par un conseiller Arion. Le Client est informé du fait que le premier paiement, correspondant aux éventuels frais fixes et la première échéance de mensualité ou d'annuité sera, dès lors, encaissé dès la transmission des coordonnées bancaires. Il a conscience du fait que la prestation de Arion est une prestation récurrente, et que ses coordonnées bancaires, qu’il aura volontairement données à Arion seront conservées par Arion (de façon cryptée) pendant la durée de la relation commerciale, afin que Arion puisse procéder à un prélèvement automatisé et récurrent des sommes dues par le Client. Ces coordonnées ne seront pas conservées au-delà de la relation contractuelle. Le Client est parfaitement conscient qu’à compter de la date à laquelle il souscrit à l’offre et transmet son mode de paiement, l’équipe Arion sera à sa disposition pour l’accompagner dans l’élaboration de son site internet et pour répondre à ses questions en vue de la réalisation de cet objectif. C’est cette mise à disposition qui est facturée au Client, qu’il l’exploite ou non. Le Client s’engage à ce que le compte bancaire utilisé pour le paiement soit suffisamment approvisionné pour permettre le paiement. Si le client a donné plusieurs moyens de paiement à Arion, et si l’un de ces moyens de paiement ne fonctionne pas, Arion pourra réaliser une tentative de paiement sur les autres moyens transmis à Arion. Si le client souhaite que Arion ne puisse plus utiliser un moyen de paiement, il se doit d’en informer Arion par email.
+            </p>
+            <strong>7.2.1 : </strong>Carte bancaire
+            <p>
+                Si le Client effectue son règlement par carte bancaire : Lors de la commande, le Client est invité à donner les informations relatives à sa carte de crédit et par la suite, il se doit d’actualiser ses informations après tout changement de façon à ce qu’un paiement ne puisse être rejeté par l’organisme bancaire. Le paiement se fait automatiquement le premier jour de chaque période (mois, trimestre, année...). Le Client est alerté quant au fait que lors de ces paiements successifs, les éventuels frais bancaires (nationaux ou étrangers) sont à sa charge. Les moyens de paiement fournis à Arion pourront être réutilisés automatiquement. Le Client est néanmoins informé du fait que ses numéros de carte bancaire ne sont pas stockés directement par Arion, mais par un organisme tiers habilité, en vue de procéder à des paiements récurrents et sécurisés. En cas de changement des coordonnées bancaires du Client, ce dernier s’engage à faire parvenir à arion ses nouvelles coordonnées bancaires par mail ou par téléphone au moins 7 jours avant la prochaine échéance de paiement.
+            </p>
+            <strong>7.2.2 : </strong>RIB
+            <p>
+                Arion propose la signature d’un mandat d’autorisation de prélèvement automatique validé, par l'intermédiaire du partenaire financier BNP PARIBAS
+            </p>
+            <strong>7.3 : </strong>Conséquences d'un retard de paiement ou non-paiement
+            <p>
+                En cas de défaut de prélèvement, et si le Client n’a pas régularisé sa situation dans les 30 jours,le  Site Arion pourra être automatiquement et définitivement fermé par Arion. Cette période de suspension sera tout de même due par le client, dans la mesure où son Site internet continue d’être hébergé par Arion et à bénéficier des mises à jour techniques relatives au Service Arion. A défaut de paiement à la date prévue, l’indemnité forfaitaire pour frais de recouvrement de 40 euros, prévue par la loi n° 2012-387 du 22 mars 2012 sera perçue de plein droit, sans préjudice d’un intérêt de retard égal au taux d’intérêt de la Banque Centrale Européenne (BCE) pour ses opérations de refinancement, majoré de 10 points. Lequel est immédiatement exigible, sans qu’un rappel ne soit nécessaire, en application de l’article 53 de la loi n°2001-420 du 15 mai 2001. Les intérêts sont capitalisés dans les conditions de l’article 1154 du Code civil. 
+            </p>
+            <strong>7.4 : </strong>Facturation
+            <p>
+                Arion adressera une facture au format électronique, à chaque paiement. Le Client accepte expressément de recevoir ou de disposer des factures par voie électronique. 
+            </p>
+
+
+            <h4>article 8 - arion en sa qualité d'hébergeur de contenus</h4>
+            <p>
+                Arion bénéficie du statut d’hébergeur des Données publiées par le Client, au sens de l’article 6-I-2 de la Loi de confiance dans l’économie numérique du 21 juin 2004. Conformément à l’alinéa 3 du même article, Arion ne pourra voir sa responsabilité civile ou pénale engagée à raison des informations publiées ou validées par un Client, à moins que, dès le moment où il a eu connaissance de l’activité ou de l’information illicite du Client, il n’ait agi promptement pour retirer ces informations ou en rendre l’accès impossible. Arion ne procède à aucune modération à priori quant aux Contenus précités. Arion impose néanmoins au Client de respecter des règles de bonne conduite et s’arroge notamment le droit de procéder à une surveillance à posteriori et aléatoire des Données présentes sur les Sites Arion qu’il héberge. Le Client est donc seul responsable de la mise en ligne de Données sur son Site Arion. Ceci reste valable si le Client demande une assistance technique à Arion pour éditer son Contenu. En effet, cette assistance technique ne donne jamais lieu à une relecture de texte ou à une analyse des Données fournies par le Client. Le Client peut choisir de publier ou de ne pas publier une Donnée sur son Site Arion (images, textes, vidéos, fichiers...). Par ailleurs, en vue de simplifier la démarche de ses Clients, Arion peut être amené à leur suggérer des Contenus pour leur Site Arion. Le Client est alors tenu de consulter, de modifier, voire de supprimer ces Contenus, afin qu’ils correspondent bien à ses besoins puisqu’aucun contrôle ne sera opéré par Arion avant la publication ou au moment de son référencement, qui aura été annoncé au Client par email. Le Client est également tenu de vérifier qu'il n'enfreint aucune loi en vigueur en publiant ces contenus. La responsabilité de Arion ne pourra en aucun cas être recherchée à ce titre. Cette mise à disposition d’éléments a pour unique but de faciliter la réalisation du site, tout en laissant au Client un complet contrôle sur les Contenus finalement publiés sur son site internet. Le client, s'il souhaite modifier ou supprimer une Donnée de son site, est amené à le faire lui- même, ou à envoyer un email à Arion à contact@arion-consutling.fr. 
+            </p>
+
+
+            <h4>article 9 - pré-requis techniques</h4>
+            <p>
+                La technologie Arion, commune à tous les Clients Arion, a été testée sur des ordinateurs PC, MAC et smartphones. Elle fonctionne avec les systèmes d’exploitation suivants : Windows 10 MacOS X versions 10.10 et supérieures Linux versions 4.2 et supérieures iOS versions 11 et supérieures Android versions 5 et supérieures Ainsi que pour les navigateurs : Chrome version 83 Firefox version 66 Safari version 13 Microsoft Edge version 84 Le Client est informé du fait qu’il existe une possibilité qu’apparaissent des dysfonctionnements sur des appareils ou à partir de navigateurs ne figurant pas dans les listes précitées, à partir d’ordinateur ou smartphone disposant d’une connexion internet particulièrement lente, ou à partir d'ordinateur ou smartphone bridés ou limités pour des raisons de sécurité. 
+            </p>
+
+
+            <h4>article 10 - traitement des données à caractères personnel</h4>
+            <strong>10.1 : </strong>Transparence et obligations d'informations 
+            <p>
+                Le responsable du traitement des données à caractère personnel au sein de Arion est Frederic Marquis domicilié au 49 rue de Ponthieu 75008 Paris. Si le client est amené à stocker des données à caractère personnel, il garantit à Arion qu’il tiendra à jour, si nécessaire, un registre de traitement préalable à la mise en ligne de son site prévue par la législation en vigueur et notamment auprès de la commission nationale informatique et libertés (CNIL). Arion informe le client que des données personnelles peuvent être transmises pour la bonne exécution du présent Contrat notamment pour l’enregistrement des noms de domaine. Ces informations peuvent faire l’objet de publications en ligne par exemple via le « Whois » d’un site du type www.gandi.net/domaine/enregistrer qui permet de savoir qui est le titulaire d’un nom de domaine sur internet. Les Internautes disposent de la libre faculté de fournir des informations personnelles les concernant. La fourniture d’informations personnelles n’est pas indispensable pour la navigation sur le Site Arion du Client ou sur arion-france.com En revanche, la commande d’un service à Arion suppose la collecte par Arion d’un certain nombre d’informations personnelles. Les Internautes ne souhaitant pas fournir ce type d’informations nécessaires à l’inscription ne pourront pas contractualiser avec Arion. En application de la loi 78-17 du 6 janvier 1978 et du Règlement général sur la protection des données (RGPD) du 27 avril 2016, il est rappelé que les données nominatives qui sont demandées au Client sont nécessaires au traitement de sa commande et à l'établissement des factures, notamment. Le Client dispose, conformément aux réglementations nationales et européennes en vigueur d'un droit d'accès permanent, de modification, de rectification et d'opposition s'agissant des informations le concernant. Ce droit peut être exercé par courrier postal : 49 rue de Ponthieu, 75008 Paris par mail à l’adresse contact@arion-consulting.fr 
+                Arion s'engage à assurer la confidentialité des données à caractère personnel communiquées par le Client. Le Client est informé que Arion peut utiliser les données personnelles concernant le Client afin de lui adresser des offres commerciales susceptibles de l'intéresser. Le Client consent dès l'enregistrement de son adresse de courrier électronique, à recevoir par courriel toute lettre d'information transmise par Arion en lien avec le service souscrit. S'il ne souhaite plus recevoir ladite lettre d'information, il peut à tout moment se désabonner en cliquant sur le lien prévu à cet effet en bas de chaque lettre d'information envoyée ou en adressant une demande écrite au siège social de Arion. Les données collectées sont conservées par Arion pendant le temps de la relation contractuelle puis, jusqu’à 3 ans après la fin de cette relation.                 
+            </p>
+            <strong>10.2 : </strong>Les finalités des traitements 
+            <p>
+                Les données collectées par Arion ont pour finalité principale de permettre la réalisation du site web du Client, ainsi que le développement et l’optimisation de l’activité professionnelle du Client, objet principal de la prestation. Ces données peuvent être notamment le nom, le prénom, l’adresse mail, le mot de passe, etc… 
+            </p>
+            <strong>10.3 : </strong> Droit de réclamation, à l’effacement et à l’oubli
+            <p>
+                Le Client est informé du fait qu’il la possibilité d’introduire une réclamation auprès de la Commission Nationale de l’Informatique et des Libertés soit, via l’URL suivante : https://www.cnil.fr/fr/plaintes soit, via courrier postal (3 Place de Fontenoy - TSA 80715 - 75334 PARIS CEDEX 07). La personne concernée a le droit d'obtenir du responsable du traitement l'effacement, dans les meilleurs délais, de données à caractère personnel la concernant et le responsable du traitement a l'obligation d'effacer ces données à caractère personnel dans les meilleurs délais, lorsque les données à caractère personnel ne sont plus nécessaires au regard des finalités pour lesquelles elles ont été collectées ou traitées d'une autre manière en écrivant à l’adresse contact@arion-consulting.fr 
+                Par ailleurs, lorsque la personne concernée était mineure au moment de la collecte des données, elle peut obtenir auprès de Arion l’effacement des données qu’elle estime problématiques dont Arion est l’hébergeur et ce, dans les meilleurs délais ; en écrivant à l'adresse contact@arion-consulting.fr 
+            </p>
+            <strong>10.4 : </strong>Droit des personnes décédées 
+            <p>
+                Compte tenu du fait que Arion s’adresse principalement aux personnes morales, le droit des personnes décédées ne lui est que partiellement applicable Arion permet néanmoins aux personnes exerçantes en tant que micro-entreprise de donner des directives relatives à la conservation, à l'effacement et à la communication de leurs données après leur décès en écrivant à l’adresse contact@arion-consulting.fr 
+                Par ce biais, une personne peut être désignée pour exécuter ces directives. Cette dernière a alors qualité, lorsque la personne est décédée, pour prendre connaissance des directives et demander leur mise en œuvre aux responsables de traitement concernés. En l'absence de directives données de son vivant par la personne, les héritiers, qui en feront la démonstration (acte de notoriété, acte de décès) auront la possibilité d'exercer le droit d'accès et le droit de clôture des comptes utilisateurs du défunt.                 
+            </p>
+            <strong>10.5 : </strong>Absence d'hébergement hors UE
+            <p>
+                Arion loue un serveur dédié auprès d’Always Data laquelle lui assure que les données stockées relatives aux Sites Internet des Clients sont hébergées dans l’Union Européenne. 
+            </p>
+            <strong>10.6 : </strong>Fin du contrat et sort des données
+            <p>
+                Au terme du Contrat ou en cas de rupture anticipée de ce dernier pour quelque cause que ce soit, Arion détruira les copies des Données détenues dans ses systèmes informatiques dans un délai raisonnable et dans le respect des durées légales de conservation et d’archivage. 
+            </p>
+
+
+            <h4>aricle 11 - newsletter de arion et prescription</h4>
+            <p>
+                En faisant une demande de renseignement à Arion à l’Outil, le Client accepte de recevoir des emails d’information et de conseil par Arion. Dans le cas où le service Arion ne puisse pas satisfaire le besoin du Client, ce dernier accepte que Arion transmette ses coordonnées à l'un de ses partenaire de confiance qui a toutes les chances de le satisfaire. Exemple : un Client ayant besoin d'un vidéaste, d'un développement spécifique, ou d'un site à dominante ecommerce. 
+            </p>
+
+
+            <h4>article 12 - cookies et adresses ip des internautes</h4>
+            <strong>12.1 : </strong>Cookies liés au site arion-france.com
+            <p>
+                Un cookie est un fichier d'informations de taille limitée, installé sur votre équipement personnel par les Sites Internet que visite le Client. Les cookies permettent de stocker des informations de navigation, telles que vos préférences de navigation ou des informations de profil. Les cookies peuvent être créés par notre Site, ils sont alors appelés cookies internes, ou proviennent de sites tiers. Certains cookies internes sont nécessaires au fonctionnement du Site, ils lui permettent de fonctionner de manière optimale. Les autres cookies internes ne sont pas nécessaires au fonctionnement du Site. Les cookies tiers proviennent de sites tiers, ils ne sont pas nécessaires au fonctionnement du Site. Lors de sa première visite sur le Site arion-france.com un bandeau informe le Client de la présence de ces cookies et l’invite à indiquer votre choix. Ils ne sont alors déposés que si le Client continue sa navigation sur le Site arion-france.com. Le Client peut à tout moment s’opposer à tout ou partie des cookies et les supprimer en utilisant les paramètres de votre navigateur. Cependant, s’il s’oppose aux cookies nécessaires au fonctionnement du Site, son expérience Client risque d’être dégradée. Sans suppression de la part du Client, les cookies sont conservés sur son équipement pendant une durée maximale de 13 mois. Parmi les cookies, certains ont pour finalité la mesure d’audience. Il s’agit des cookies analytiques et de performance. Ils nous aident à estimer le montant de nos visiteurs et à évaluer leurs habitudes d’utilisation du Site. Ils sont aussi utilisés pour suivre les conversions. Des cookies de ciblages ou publicitaires. Ils nous aident à reconnaître le Client lorsqu’il revient sur notre Site et nous permettent de personnaliser notre Site ou de lui proposer des offres ciblées selon ses centres d’intérêts. Les choix du Client en matière de cookies peuvent être exprimés directement avec son terminal. Dans ce cas, il peut autoriser ou non l'enregistrement de cookies dans son terminal en utilisant les paramètres appropriés de son logiciel de navigation sur Internet. La configuration en matière de cookies peut varier d'un navigateur à l'autre : Pour Internet Explorer:http://windows.microsoft.com/fr-FR/windows-vista/Block-or-allow-cookies Pour Safari:http://support.apple.com/kb/PH5042 Pour Chrome :http://support.google.com/chrome/bin/answer.py?hl=fr&hlrm=en&answer=95647 Pour Firefox :http://support.mozilla.org/fr/kb/Activer%20et%20d%C3%A9sactiver%20les%20cookies Pour Opera :http://help.opera.com/Windows/10.20/fr/cookies.html 12. 2. Adresse IP L’adresse IP correspond à une série de chiffres séparés par des points permettant l’identification unique d’un ordinateur sur le réseau Internet. Arion se réserve le droit de collecter l’adresse IP publique de tous les Internautes. La collecte de cette adresse IP sera effectuée de façon anonyme. L’adresse IP des Internautes sera conservée pendant la durée requise par la loi. Conformément à la législation en vigueur, Arion devra communiquer toutes les données personnelles relatives à un Internaute aux autorités habilitées sur réquisition judiciaire ou à toute personne sur décision judiciaire. L’adresse IP pourra faire l’objet d’un rapprochement avec l’identité effective de l’Internaute en cas de communication de cette information par un fournisseur d’accès à internet. 
+            </p>
+
+
+            <h4>article 13 -  qualité de l'outil</h4>
+            <strong>13.1 : </strong>Obligations de Arion <br>
+            <strong>13.1.1 : </strong>Garanties de performances
+            <p>
+                Arion est destiné à des Clients professionnels souhaitant bénéficier d’une grande qualité de service, pour la réalisation d'un site internet vitrine. Arion propose au Client un abonnement qui correspond à un usage normal de son Site Arion, tel qu’il est défini ci-dessous. Le volume de Contenus échangés chaque mois avec les Internautes visitant le site et le volume de Données stockées sont limités à vingt (20) giga octets. Ce volume est suffisamment grand pour que moins de 1% des professionnels soient concernés par cette limitation qui est extrêmement haute. 
+            </p>
+            <strong>13.1.2 </strong>
+            <p>
+                Arion est destiné à des Clients professionnels souhaitant bénéficier d’une grande qualité de service, pour la réalisation d'un site internet vitrine. Arion propose au Client un abonnement qui correspond à un usage normal de son Site Arion, tel qu’il est défini ci-dessous. Le volume de Contenus échangés chaque mois avec les Internautes visitant le site et le volume de Données stockées sont limités à vingt (20) giga octets. Ce volume est suffisamment grand pour que moins de 1% des professionnels soient concernés par cette limitation qui est extrêmement haute. 
+            </p>
+            <strong>13.1.3 : </strong>Délai de mise en service 
+            <p>
+                Suite à sa souscription au Service Arion, le Client aura à sa disposition les services d’un interlocuteur chez Arion en vue de lancer la création de son site internet. C’est notamment cette mise à disposition qui est facturée au Client. Le Client doit alors communiquer à son interlocuteur Arion les éléments nécessaires à la création de son Site : notamment ses goûts esthétiques, le Contenu qu’il souhaite sur son Site, etc. Le délai nécessaire pour la réalisation d’une première maquette de site internet est parfois indiqué dans l’offre du client, et se comptabilise à partir du moment où le Client a fourni à son interlocuteur Arion l’intégralité des éléments nécessaires à la réalisation du Site Internet. 
+            </p>
+            <strong>13.1.4 : </strong>Délai de mise en service 
+            <p>
+                Suite à sa souscription au Service Arion, le Client aura à sa disposition les services d’un interlocuteur chez Arion en vue de lancer la création de son site internet. C’est notamment cette mise à disposition qui est facturée au Client. Le Client doit alors communiquer à son interlocuteur Arion les éléments nécessaires à la création de son Site : notamment ses goûts esthétiques, le Contenu qu’il souhaite sur son Site, etc. Le délai nécessaire pour la réalisation d’une première maquette de site internet est parfois indiqué dans l’offre du client, et se comptabilise à partir du moment où le Client a fourni à son interlocuteur Arion l’intégralité des éléments nécessaires à la réalisation du Site Internet. 
+            </p>
+            <strong>13.1.5</strong>
+            <p>
+                Assistance technique Arion met à libre disposition du Client et de l’Internaute un support technique par le biais du formulaire disponible sur www.arion-france.com/contact. Une assistance par téléphone est également à la disposition du Client, dans la limite de l’Offre souscrite par le Client. 
+            </p>
+            <strong>13.2 : </strong>Obligations du Client <br>
+            <strong>13.2.1</strong> 
+            <p>
+                Respect des droits d'auteur, des signes distinctifs et du droit à l'image des tiers Le Client s’engage à ne mettre en ligne sur son Site Arion que des Contenus véridiques et qu’il a le droit d’utiliser, notamment en ce qui concerne les droits d’auteur ou autres droits de propriété intellectuelle et/ou industrielle éventuellement attachés ainsi que toute œuvre audiovisuelle, musicale, ou autres œuvres d’art. Le Client s’engage à ne pas publier d'informations fausses ou erronées sur son Site Internet. En conséquence, le Client garantit Arion contre toute réclamation et notamment contre toute action en contrefaçon et/ou en concurrence déloyale et/ou parasitaire intentée par tout tiers. Il garantit également Arion contre toute réclamation d’Internautes qui sollicitera les services du Client.
+            </p>
+            <strong>13.2.2</strong>
+            <p>
+                Utilisation conforme des développements tiers et autres plugins L’Outil Arion permet une grande liberté aux Clients, notamment d’utiliser des programmes développés par des tiers, notamment par l’intégration de code choisi par le Client lui-même. Arion ne procède pas à un contrôle général de l’utilisation qui est faite de ces outils par ses Clients. Le Client est donc alerté quant à l’absolue nécessité de vérifier qu’il a le droit d’utiliser les Contenus qu’il décide de publier sur son site, notamment des images, vidéos, sons, textes, articles, bout de code, ou tout autre Contenu collectés ou mis en avant par l’intermédiaire de ces développements tiers. Arion rappelle qu’il ne procède pas à un contrôle général des Contenus des Sites Arion qu’il héberge. En sa qualité d’hébergeur et non d’éditeur, il ne pourra donc voir sa responsabilité engagée qu’à la condition qu’un Internaute victime d’un Contenu situé sur l’un des Sites Arion lui notifie ledit Contenu, et que Arion ne réagisse pas comme il le devrait, conformément à l’article 6-I-5 de la Loi de Confiance dans l'Économie Numérique. 
+            </p>
+            <strong>13.2.3 : </strong>Respect de l'ordre public et des bonnes mœurs             
+            <p>
+                Le Client s’engage à ne pas mettre en ligne sur son Site Arion de Contenus comportant de quelconques éléments illégaux, à savoir et notamment des Contenus racistes, obscènes, menaçants, injurieux, abusifs, pornographiques, pédophiles, harcelants, haineux, négationnistes, diffamatoires et, de manière générale, susceptibles de porter atteinte à l’ordre public et aux droits des tiers. Dans ces conditions, Arion, en tant que fournisseur d’hébergement, ne saurait être tenu pour responsable d’une atteinte portée à un tiers du fait d’un Contenu mis en ligne par le Client via son Outil. Dans une telle situation, Arion se réserve la faculté, sans autre préavis ni formalisme, de suspendre le Site Arion du Client, après l’en avoir avisé selon les conditions prévues à l’article 4.2 des présentes. Le Client s’engage également à ne pas entraver ou perturber les Outils et les serveurs de Arion et à se conformer aux conditions requises, aux procédures, aux règles générales qui lui sont communiquées par Arion pour la bonne utilisation de l’Outil. 
+            </p>
+            <strong>13.2.4</strong>
+            <p>
+                Interdiction de revente de d'exploitation des Outils de Arion au profit d'un tiers.
+                Sauf autorisation préalable de la part de Arion, le Client n’est pas autorisé à mettre à disposition à des tiers, à titre gratuit ou payant, ni même à utiliser dans un cadre autre que celui de ce contrat, les programmes, portions de code, sites, Contenus, ou Outils fournis par Arion.                 
+            </p>
+            <strong>13.2.5 : </strong>Devoir d'information 
+            <p>
+                Le Client s’engage à informer sans délai Arion en cas de plainte, réclamation, ou action de tiers concernant les Contenus et plus généralement le Site Arion qu’il aura conçu par son intermédiaire. Il s’engage également à répondre dans un délai inférieur à 5 (cinq) jours calendaires à toute demande d’information de la part de Arion en cas de litige ou échange conflictuel, le cachet de la poste ou la date d’émission du courriel faisant foi. 
+            </p>
+            <strong>13.2.6 : </strong>Réversibilité des Données du Client 
+            <p>
+                En cas de résiliation à l’initiative de Arion, ou de résiliation à l’initiative d’un Client à jour des paiements dûs à Arion, le Client en question restera propriétaire des Contenus de Site Internet s'il en est l'auteur. Il pourra les récupérer avant la fin du service, par une simple extraction HTML ou de simples copiés-collés de contenus réalisés par ses soins. Cette récupération devra être faite avant la fin du service, moment auquel Arion pourra naturellement suspendre le Site Internet du Client. 
+            </p>
+            <strong>13.2.7 : </strong>Mentions légales devant figurer sur le site du Client 
+            <p>
+                Arion tient à rappeler à son Client la nécessité de mettre en place des mentions légales sur son Site Internet. Chaque Client est l’unique responsable de l’édition de ses mentions légales, même si Arion peut être amené à apporter des conseils et à fournir une ébauche de mentions légales, en fonction de l’Offre souscrite par le Client. 
+            </p>
+            <strong>13.2.8 : </strong>Accès au service Arion via un partenaire
+            <p>
+                Dans le cas où le Client a connu Arion par l’intermédiaire d’un tiers partenaire de Arion, il est possible que le Site Arion créé par ce Client contient, automatiquement, certains Contenus imposés. Le Site Arion créé peut, par exemple, porter, sous forme textuelle ou imagée, l’empreinte du partenaire en question. Le Client accepte ces contraintes lors de la création de la première maquette du Site Internet, mais est libre d’en demander le retrait à tout moment. 
+            </p>
+
+
+            <h4>article 14 - limitation de responsabilité de arion et force majeure</h4>
+            <strong>14.1 : </strong>Limitation de responsabilité 
+            <p>
+                Arion sera responsable vis-à-vis du Client pour tout dommage direct et prévisible résultant de manquements et/ou inexécutions de sa part, dans le cadre des obligations qu’il assure au titre du présent Contrat. Mais en tout état de cause, la responsabilité de Arion et de ses dirigeants à raison de tout dommage pouvant résulter d’une inexécution ou mauvaise exécution prouvée de sa part, dans le cadre du présent Contrat, hors dommages corporels, est expressément limitée, toutes causes confondues, à l’équivalent de six (6) mois d’abonnement et ce quel que soit le fondement juridique de la réclamation et la procédure employée pour la faire aboutir. Aucune Partie ne sera responsable vis-à-vis de l’autre au titre des dommages indirects et/ou imprévisibles en lien avec le présent Contrat. Pour le cas où des fichiers, données, programmes ou tout autre document seraient confiés à Arion par le Client, il appartiendra à celui-ci de se prémunir, le cas échéant, contre les risques de perte ou d’accident en conservant une sauvegarde de l'ensemble des éléments remis au Prestataire. De convention expresse, Arion ne pourra en aucun cas voir engager sa responsabilité en cas de dommages à ces éléments. Le client a notamment conscience que le référencement de son site est multifactoriel : il est le fruit d’un travail d’équipe entre Arion et le Client, dépend de l’évolution des normes de Google, et bien sûr des actions des concurrents du Client. La responsabilité de Arion ne pourrait donc être engagée sur ce sujet. Si le Client sollicite Arion pour rénover un Site existant, ou si le Client procède à un transfert de nom de domaine à Arion, le Client a conscience qu’une perte du référencement du site, et/ou de l’historique de ses courriels sont probables, et accepte cette contrainte. Le transfert de la gestion de nom de domaine peut prendre une durée indéterminée au motif qu’il dépend du temps de réaction des bureaux d’enregistrement. Le Client en est conscient et ne pourra pas reprocher à Arion la lenteur ou l'échec d’une procédure dont Arion n’a pas la complète maîtrise. Arion ne répond que d’une obligation de moyen concernant l’Outil, le site arion-france.com, le Site du Client, et ses autres services, objets des présentes. Arion met à la disposition du Client une fonctionnalité qui lui permet de présenter et de promouvoir des produits, services, Contenus, via son Site. Cependant, Arion n’est aucunement responsable de ces Contenus, qui sont sous la seule responsabilité du Client. Le Client conserve l’entière responsabilité de la relation qu’il tisse avec les Internautes. L’Internaute a conscience que Arion n’a aucune responsabilité vis -à-vis de la relation entre cet Internaute et le Client de Arion qui exploite ce Site internet. 
+            </p>
+            <strong>14.2 : </strong>Force Majeure 
+            <p>
+                Par ailleurs, Arion n’engagera pas sa responsabilité en cas de force majeure ou de faute du Client, telles que définies au présent article : Aux sens des présentes conditions générales, sera considéré comme un cas de force majeure opposable au Client tout empêchement, limitation ou dérangement du service du fait d’incendie, d’épidémie, d’explosion, de tremblement de terre, de fluctuations de la bande passante, de manquement imputable au fournisseur d’accès, de défaillance des réseaux de transmission, d’effondrement des installations, d’utilisation illicite ou frauduleuse des mots de passe, codes ou références fournis au Client, de piratage informatique, d’une faille de sécurité imputable à l’hébergeur ou aux développeurs, d’inondation, de panne d’électricité, de guerre, d’embargo, de loi, d’injonction, de demande ou d’exigence de tout gouvernement, de réquisition, de grève, de boycott, ou autres circonstances hors du contrôle raisonnable de Arion. Dans de telles circonstances, Arion sera dispensé de l’exécution de ses obligations dans la limite de cet empêchement, de cette limitation ou de ce dérangement. Aux sens des présentes conditions générales, sera considérée comme une faute du Client opposable à ce dernier tout non-respect des présentes conditions générales, toute divulgation ou utilisation illicite du mot de passe, des codes et références du Client. Sera également considérée comme une faute du Client la mise en œuvre de tout procédé technique, tels que des robots, ou des requêtes automatiques, dont la mise en œuvre contreviendrait à l’esprit des présentes Conditions Générales.Arion informe le Client que la protection des données personnelles et des Contenus des sites web ne peut être totale dans un réseau ouvert tel qu'Internet. 
+            </p>
+
+
+            <h4>article 15 - propriété interllectuelle et droits sur le site internet</h4>
+            <p>
+                Le Contenu, la structure et le logiciel mis en œuvre pour le fonctionnement de l’Outil sont protégés par le droit d’auteur. Toute représentation ou reproduction intégrale ou partielle faite sans le consentement de Arion ou de ses ayants droit ou ayants cause constitue une violation des dispositions du Code de la propriété intellectuelle et sera susceptible de donner lieu à des poursuites judiciaires. Il en est de même pour la traduction, l’adaptation ou la transformation, l’arrangement ou la reproduction par un art ou un procédé quelconque. Arion concède au Client une licence d’exploitation sur l’architecture (arborescence, navigation, fonctionnalités, etc) et la charte graphique du site internet. Cette licence est non cessible, non exclusive et consiste dans le droit d’utiliser ces éléments pendant la durée du contrat, dans le cadre de l’Outil Arion, et sans pouvoir accéder notamment au code source ou à la base de données. Le Client conserve tous les droits sur les Contenus qu’il aura fournis. Cependant, pendant la durée du contrat, Arion peut par exemple être amené à utiliser les sites internet créés par ses Clients à des fins commerciales. Arion peut par exemple afficher ces sites en « exemples » sur le site arion-france.com (ou tout autre support). Ainsi, dès la publication de ses Contenus sur son Site Arion, le Client accorde à Arion une licence d’utilisation mondiale, non-exclusive, gratuite, incluant le droit d’utiliser, de copier, de reproduire, de traiter, d’adapter, de modifier, de publier, de transmettre, d’afficher et de distribuer ces Contenus sur tout support par toute méthode de distribution connu ou amené à exister. Arion utilisera par exemple cette licence d’utilisation afin d’afficher un aperçu du site du Client, un lien vers ledit site, éventuellement associé à un témoignage du Client ainsi que son identité. Le Client autorise Arion à effectuer un certain nombre d’actions ayant pour but d’améliorer l’ergonomie ou la visibilité du Site Arion du Client. Arion pourra par exemple référencer le Site du Client sur différents annuaires tels que Google My Business ou d’autres annuaires. Arion pourra effectuer ces actions au nom du Client. Si le Client prend l’initiative d’utiliser sur son site des œuvres détenues par des tiers dont il n’a pas les droits, il garantit alors Arion contre toutes les allégations portant sur la contrefaçon de ces droits de propriété intellectuelle par ledit site. A ce titre, le Client assure la défense de Arion et prend à sa charge tous frais de défense et dommages-intérêts auxquels pourrait être condamné Arion par une décision de justice ayant pour base la démonstration d’une contrefaçon. 
+            </p>
+
+
+            <h4>Article 16 - convention de preuve</h4>
+            <p>
+                Les parties conviennent expressément que l’utilisation du compte du Client par lui-même ou par un tiers fera preuve entre elles. Les systèmes d’enregistrement de Arion sont considérés comme valant preuve de la date et de la durée de l’utilisation. L’ensemble des éléments relatifs à l’utilisation du compte seront conservés et archivés par Arion. Arion pourra se prévaloir, notamment à des fins probatoires, de tout acte, fichier, enregistrement téléphonique, courriel, rapport de suivi, statistiques sur tous supports dont le support informatique établi, reçu ou conservé par ses soins. Ces modalités de preuve constituent une présomption qui ne pourrait être renversée qu’en présence d’éléments établissant que les moyens d’enregistrement et de stockage de Arion ont été effectivement défaillants. 
+            </p>
+
+
+            <h4>article 17 - la fonctionnalité "email"</h4>
+            <p>
+                Arion peut proposer au Client, au moment de la souscription, ou dans un second temps, la possibilité de souscrire à une option correspondant à la mise à disposition d'une adresse email professionnelle. L’accès à ce service et son utilisation sont subordonnés à l’acceptation des présentes conditions générales. Cette option est réservée aux Clients domiciliés en France. Tout manquement à ces conditions générales implique l'arrêt de ce service, sous les mêmes conditions de la même manière que l'Offre auquel a souscrit le Client initialement. Cette option n'est pas dissociable du service lié à l'utilisation de l'Outil Arion, et en garde ses caractéristiques de période d'engagement, de paiement, de facturation, et de conditions d'utilisation. Au moment de l’inscription, l’utilisateur choisit une adresse email et un mot de passe. Ces données d’accès sont personnelles et strictement confidentielles. L’utilisateur est seul responsable de leur conservation et de l’utilisation de son compte. Si l’identifiant et/ou le mot de passe sont parvenus sous quelque forme et pour quelque raison que ce soit entre les mains d’un tiers indélicat, l’utilisateur doit en informer immédiatement Arion. Arion ne saurait être tenue pour responsable de quelque dommage que ce soit dû à un manquement à l’engagement de confidentialité de l’utilisateur. L’accès à la boîte aux lettres ainsi que la gestion des courriers électroniques sur Internet se fait à partir du site webmail.arion-france.com, qui redirige le Client vers un autre prestataire, hostinger. Arion assure une prestation dans la limite de ce que fournit le prestataire hostinger pour ce service, conformément à ses conditions générales de ventes.
+                Ce service permet d’échanger des courriers électroniques (textes, images, sons) avec toute personne disposant d’une boîte aux lettres électronique d’un quelconque service de messagerie connecté à Internet. Arion fournit le service email en l’état et fixe les limites qui lui sembleront utiles à l’utilisation normale du service, notamment une limite de 500Mo d'espace occupé sur le serveur, par adresse email. Arion se réserve le droit de limiter l’accès au service email si cela est nécessaire pour sa sécurité, son intégrité, la protection des données collectées, ou une mise à jour importante. Si la loi l’exige, Arion devra divulguer toute ou partie des données personnelles de l’utilisateur, notamment à la suite d'une demande judiciaire ou administrative. L’utilisateur est tenu de consulter sa boîte aux lettres électronique et de procéder à la sauvegarde des messages régulièrement. L’utilisateur est tenu de se servir du service email conformément à la loi et aux présente conditions générales d’utilisation et, plus particulièrement, à ne pas l’utiliser pour afficher, télécharger, envoyer ou transmettre tout contenu : à caractère violent, pornographique ou susceptible de porter atteinte au respect et à la dignité de la personne humaine ; encourageant à la commission de crimes et délits ; incitant ou pouvant inviter à la discrimination, la haine, la violence en raison de la race, de la religion, de la nationalité ou de l’ethnie ; illégal, menaçant, constitutif de harcèlement, diffamatoire, injurieux ; de nature à induire en erreur des tiers, notamment en usurpant le nom et/ou la dénomination sociale d’autres personnes ; comprenant, sans que cette liste ne soit exhaustive, des virus informatiques ou tout autre code ou programme conçus pour interrompre, manipuler, détruire ou limiter la fonctionnalité du service. L’utilisateur s’engage à garder les données à caractère personnel de tiers, obtenus dans le cadre d’échanges des messages électroniques, confidentiels ; il s’en interdit toute exploitation, notamment commerciale, à moins d’avoir obtenu l’autorisation expresse de l’intéressé. L’utilisateur s’engage à respecter l’interdiction de procéder à des envois massifs de messages non sollicités (pourriels ou « spams ») ; en cas de violation de cette interdiction, l’utilisateur engage sa responsabilité et est tenu de réparer tout dommage ainsi causé à Arion et/ou un tiers. En cas de manquement du Client aux engagements pris ci-dessus, Arion se réserve le droit de bloquer sa boîte aux lettres électronique, voire de résilier le contrat. Arion avertit l’utilisateur du blocage/de la résiliation par courrier électronique. Il est précisé qu’un tel blocage (voire la résiliation) est sans préjudice de toute action judiciaire que Arion pourrait engager à l’encontre de l’utilisateur ainsi que de tous dommages et intérêts que Arion pourrait réclamer à l’utilisateur. L’utilisation du service Email dépend souvent du logiciel d’emailing du client (Outlook par exemple). Ce service n’est assorti à aucune garantie de quelque nature que ce soit. Ainsi, Arion ne garantit ni expressément, ni implicitement l’utilisabilité du service email, notamment la disponibilité de la messagerie électronique, l’archive des courriels, ou encore l’efficacité des filtres anti-spam mis en place par ses soins etc. En tout état de cause, Arion ne peut être tenue pour responsable d’un dommage occasionné par l’interruption de l’accès ou par la perte des données, plus généralement, de tout dommage consécutif à l’utilisation ou à l’impossibilité d’utiliser le service email. En tout état de cause, la responsabilité civile de Arion à raison de tout dommage pouvant résulter d’une inexécution prouvée de sa part, dans le cadre du présent Contrat, hors dommages corporels, est expressément limitée, toutes causes confondues, à l’équivalent de six (6) mois d’abonnement et ce quel que soit le fondement juridique de la réclamation et la procédure employée pour la faire aboutir. Les conditions de durée et de résiliation sont les mêmes que pour l'Offre souscrite par le Client. Arion attire l’attention de l’utilisateur sur le fait qu’au moment où la résiliation du contrat devient effective, ses identifiants et son mot de passe ainsi que tous les contenus et données seront supprimés définitivement.                 
+            </p>
+
+
+            <h4>article 18 - dispositions finales</h4>
+            <p>
+                Toutes les relations entre Arion et ses Clients sont régies par le droit français, à l'exclusion de toute autre législation. Pour le cas où un litige naîtrait entre Arion et ses Clients du fait de l’exécution ou de l’interprétation du présent Contrat, les Parties conviennent préalablement à toute action en justice de rechercher une solution amiable. La Partie qui souhaite faire état d’un différend s’engage à en informer l’autre par LRAR adressée à son siège. A compter de la réception de cette mise en demeure et à défaut d’accord amiable dans un délai de 30 jours, le litige relèvera de la compétence exclusive du Tribunal de Commerce de Paris (75), même en cas de pluralité de défendeurs, d’appel en garantie ou d’action en référé. Arion est autorisé à modifier le contenu des présentes Conditions générales, sous réserve de notifier au Client l’existence de cette modification et la date de sa prise d’effet, en l’invitant à prendre connaissance du nouveau texte des Conditions générales, qui sera disponible en ligne. L’accord du Client sera réputé acquis à défaut d’opposition écrite dans les 30 jours suivant cette notification, ce qui entraînera l’entrée en vigueur immédiate et automatique des Conditions générales modifiées, à l’expiration de ce délai, ou à compter de la date d’entrée en vigueur indiquée par Arion, tant que le délai de trente jours susmentionnés est respecté. Dans le cas où le client exprime son refus concernant les nouvelles Conditions générales, ce dernier restera soumis aux anciennes Conditions générales. Arion conserve chaque version de ses conditions générales, pourra les faire parvenir au Client sur simple demande. Ces conditions générales sont également disponibles sur un support durable (pdf) sur demande via l’adresse mail suivante contact@arion-consulting.fr 
+                Les conditions de licence des éditeurs de programmes, indépendants de Arion, incluses dans l’Outil fourni par Arion, sont applicables cumulativement avec les présentes Conditions Générales, ce que le Client accepte sans réserve.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="stay_informed">
+            <div class="sl_container">
+                <div class="sl_content">
+                    <h2>Restez informé.</h2>
+                    <p>Recevez nos conseils et nos news directement par email.</p>
+                    <form name="souscription-form">
+                        <input name="email" type="email" placeholder="Entrez votre email" />
+                        <button type="submit">Souscrire</button>
+                        <script src="souscription.js"></script>
+                    </form>
+                </div>
+            </div>
+            <div class="circle link_1">
+                <a href="#"><img src="./src/img/social/google.svg" /></a>
+                <a href="#"><img src="./src/img/social/x.svg" /></a>
+            </div>
+            <div class="circle link_2">
+                <a href="#"><img src="./src/img/social/facebook.svg" /></a>
+                <a href="#"><img src="./src/img/social/insta.svg" /></a>
+            </div>
+        </div>
+        <div class="footer_end">
+            <div class="sl_container">
+                <img src="./src/img/logo-footer_arion.png" class="logo_white" />
+                <h2>Réinventons l'acquisition clients</h2>
+                <a class="btn" href="recrutement.html">On recrute</a>
+                <hr />
+                <style>
+                    .bloc-txt {
+                        margin: 25px 0;
+                    }
+                    .bloc-txt h4 {
+                        line-height: 2.8;
+                    }
+                    .bloc-txt p {
+                        line-height: 1.8;
+                    }
+                </style>
+                <div class="bloc-txt">
+                    <h4>Expertise</h4>
+                    <p>Création de site professionnel</p>
+                    <p>Refonte de site internet</p>
+                    <p>Création de site par métier</p>
+                    <p>Référencement naturel</p>
+                    <p>Référencement local</p>
+                    <p>Site responsive</p>
+                </div>
+                <div class="end_content">
+                    <small>2023 Arion. Tous droits réservés</small>
+                    <small>Sas Arion France 49 Rue du Ponthieu 75008 Paris</small>
+                    <small><a href="mentions.html" target="_blank" style="text-decoration: none;">Mentions légales</a></small>
+                    <small><a href="cgv.html" target="_blank" style="text-decoration: none;">Conditions générales</a></small>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/profile.php?id=100091735881012"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/arionfrance/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/arionfr/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/js/main.js"></script> 
+</body>
+</html>
